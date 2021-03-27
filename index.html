@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+ <!------------------------------------- LOADING --------------------------------------------->   
+  <!------------------------------------------------------------------------------------------>   
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Privacy XPlorer</title>
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="vendor/openpage-scroll/js/jquery.onepage-scroll.js"></script>
+    <link href='vendor/openpage-scroll/css/onepage-scroll.css' rel="stylesheet">
+
+    <!-- D3 -->
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v0.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-annotation/1.18.0/d3-annotation.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Theme CSS -->
+    <link href="resources/css/main.css" rel="stylesheet">
+    <link href="resources/css/adam.css" rel="stylesheet">
+
+    <!-- Custom scripts -->
+    <script src="resources/js/shared.js"></script>
+    <script src="resources/js/stock.js"></script>
+    <script src="resources/js/bond.js"></script>
+    <script src="resources/js/fed.js"></script>
+    <script src="resources/js/income_expense.js"></script>
+    <script src="resources/js/main_events.js"></script>
+    <script src="resources/js/quintiles.js"></script>
+    <script src="resources/js/debt.js"></script>
+    <script src="resources/js/main.js"></script>
+</head>
+
+
+ <!------------------------------------- NAVIGATION BAR--------------------------------------->   
+  <!------------------------------------------------------------------------------------------>   
+
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            <a class="navbar-brand">Policy Tools</a>
+        </div>
+        <div class="container">
+
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a>Home</a></li>
+                    <li><a>Preface</a></li>
+                    <li><a>Ch. 1</a></li>
+                    <li><a>Historical Comparison</a></li>
+                    <li><a>Ch. 2</a></li>
+                    <li><a>Company to Company</a></li>
+                    <li><a>Summary</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<!---------------------------- BREAKING UP SECTIONS ---------------------------------------------->
+<!------------------------------------------------------------------------------------------------>
+
+    <div class="main">
+        <section class="page1">
+            <div class='chapter' id="intro">
+                <div class='container'>
+
+                </div>
+            </div>
+        </section>
+
+
+
+<!---------------------------- BREAKING UP SECTIONS ---------------------------------------------->
+<!------------------------------------------------------------------------------------------------>
+
+
+        <section class="page2">
+            <div class='chapter' id='preface'>
+                <div class='container'>
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <h2 class="section-heading">Preface</h2>
+                            <h3 class="section-subheading">Own your privacy</h3>
+                        </div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col-md-4">
+                            <h4 class="service-heading">Privacy may be important to you...</h4>
+                            <p class="text-muted">But who has the time to read every privacy policy? Donald and Cranor estimated that it would take an average user 201 hours to read all the privacy policies encountered in a year.</p>
+                        </div>
+                        <div class="col-md-4">
+                            <h4 class="service-heading">And regulations are continuing to evolve...</h4>
+                            <p class="text-muted">The General Data Protection Act of Europe went into effect in May 2018 followed by the California Consumer Privacy Act in June 2018.</p>
+                        </div>
+                        <div class="col-md-4">
+                            <h4 class="service-heading">Not all privacy policies are created equal</h4>
+                            <p class="text-muted">We realize that not all companies can be compared side-by-side. A social network will require a different privacy policy than an ecommerce company, for example.</p>
+                        </div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col-md-4">
+                            <h4 class="service-heading">So how can we help?</h4>
+                            <p class="text-muted">Privacy XPlorer was built to allow regulators, companies and consumers view changes in privacy policies over time to look for trends as well as industry specific comparisons.</p>
+                        </div>
+                        <div class="col-md-4">
+                            <h4 class="service-heading">Powerful Visualizations</h4>
+                            <p class="text-muted">Through the use of both historical visualizations and side-by-side company comparisons we enable the end user to more intiatuively understand how their data is being used.</p>
+                        </div>
+                        <div class="col-md-4">
+                            <h4 class="service-heading">Newer datasets</h4>
+                            <p class="text-muted">Combining key data sources as well as key new data sources to continue to increment on how privacy policy data is analyzed.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+<!---------------------------- BREAKING UP SECTIONS ---------------------------------------------->
+<!------------------------------------------------------------------------------------------------>
+
+
+        <section class="page3">
+            <div class='chapter' id='data_explanation'>
+                <div class='container'>
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <h2 class="section-heading">Chapter I</h2>
+                            <h3 class="section-subheading">Our Data</h3>
+                            <blockquote>
+                                "Data will talk to you if you're willing to listen."
+                                <br>
+                                <cite>-- Jim Bergeson</cite>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-2"></div>
+                        <div class="col-lg-8 text-left">
+                            <p class="text-muted">
+                                We leveraged multiple datasets for both display and training purposes.
+                            </p>
+                        </br>
+
+                            <p class="text-muted">
+                                This included the Princeton-Leuven Longitudinal Corpus of Privacy Policies, a reference dataset of over 1 million privacy policy snapshots from more than 100,000 websites, spanning over two decades.
+                            </p>
+
+                        </br>
+
+                            <p class="text-muted">
+                                We also used the OPP-115 Corpus (Online Privacy Policies, set of 115) is a collection of website privacy policies (i.e., in natural language) with annotations that specify data practices in the text. Each privacy policy was read and annotated by three graduate students in law.
+                            </p>
+                        </div>
+                        <div class="col-lg-2"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+<!---------------------------- BREAKING UP SECTIONS ---------------------------------------------->
+<!------------------------------------------------------------------------------------------------>
+
+        <section class="page4">
+            <div class='chapter' id='FILL_IN_4'>
+                <div class="container" class="col-xs-9">
+                    <div class="row">
+
+                        <h2 class="section-heading less">Historical Explorer</h2>                   
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!---------------------------- BREAKING UP SECTIONS ---------------------------------------------->
+<!------------------------------------------------------------------------------------------------>
+
+
+<!---------------------------- BREAKING UP SECTIONS ---------------------------------------------->
+<!------------------------------------------------------------------------------------------------>
+
+        <section class="page6">
+            <div class='chapter' id='FILL_IN_6'>
+                <div class='container'>
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <h2 class="section-heading">Chapter 2</h2>
+                            <h3 class="section-subheading">How firms compare</h3>
+                            <blockquote>
+                                "Privacy is the number one issue facing the Internet..."
+                                <br>
+                                <cite>-- Marc Rotenberg</cite>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-2"></div>
+                        <div class="col-lg-8 text-left">
+                            <p class="text-muted">We realize that not all companies can be compared side-by-side. A social network will require a different privacy policy than an ecommerce company, for example. </p>
+
+                            
+                        </div>
+                        <div class="col-lg-2"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!---------------------------- BREAKING UP SECTIONS ---------------------------------------------->
+<!------------------------------------------------------------------------------------------------>
+
+
+        <section class="page7">
+            <div class='chapter' id='FILL_IN_7'>
+                <div class='container'>
+                    <div class="row">
+                            <h2 class="section-heading">Company Comparison</h2>
+                    </div>
+                </div>
+        </section>
+
+<!---------------------------- BREAKING UP SECTIONS ---------------------------------------------->
+<!------------------------------------------------------------------------------------------------>
+        
+        <section class="page8 ">
+            <div class='chapter' id='summary'>
+                <div class='container'>
+                    <div class="row ">
+                        <div class="col-lg-12 text-center ">
+                            <h2 class="section-heading ">Summary</h2>
+                            <p class="text-muted">The end....</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h2 class="section-heading text-center">Sources</h2>
+                            <p><span class="underline bold text-center ">Works Cited</span></p>
+                        </div>
+                        <div class="col-lg-6">
+                            <h2 class="section-heading text-center">About Us</h2>
+                            <p><span class="underline bold ">Authors:</span></p>
+                            <p class="text-muted">Erin Stanton, Alexa Bagnard, Emily Rail, Stefanie Halac/p>
+                            <p><span class="underline bold ">Purpose:</span></p>
+                            <p class="text-muted">Create an interactive view into historical privacy policy data</p>
+                            <p><span class="underline bold ">Uses:</span></p>
+                            <p><span class="underline bold ">For Further Questions or Comments:</span></p>
+                            <p class="text-muted">elstanton@berkeley.edu</p>
+                            <p><span class="underline bold ">Final Version:</span></p>
+                            <p class="text-muted">4/10/21</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </div>
+</body>
+
+</html>

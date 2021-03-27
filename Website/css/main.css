@@ -119,7 +119,7 @@ h1, h2, h3, h4, h5, h6,
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
-    margin-top: 6rem;
+    margin-top: 1.8rem;
     margin-bottom: 1.8rem;
 }
 
@@ -2493,19 +2493,19 @@ html.no-csstransitions .home-content__main {
  * ------------------------------------------------------------------- */
 .s-works {
     background: #FFFFFF;
-    padding: 0 0 15rem 0;
+    padding: 0 0 0rem 0;
     min-height: 800px;
     position: relative;
 }
 
 .s-works .intro-wrap {
-    padding: 15rem 0 25.2rem;
+    padding: 15rem 0 10.2rem;
     background: #111111;
 }
 
 .works-content {
     max-width: 1160px;
-    margin-top: -23.4rem;
+    margin-top: 0.4rem;
 }
 
 
@@ -2933,7 +2933,7 @@ html.no-csstransitions .home-content__main {
  * ------------------------------------------------------------------- */
 .s-contact {
     background-color: #151515;
-    background-image: url("../images/contact-bg.jpg");
+    background-image: url("../images/contact-bg-new.jpg");
     background-repeat: no-repeat;
     background-position: center, center;
     padding-top: 15rem;

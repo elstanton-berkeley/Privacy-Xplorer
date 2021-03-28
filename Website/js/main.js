@@ -482,7 +482,7 @@ Highcharts.chart('container', {
     title: {
     floating: false,
     align: 'left',
-    text: 'Proporation of Companies by Business'
+    text: '2019: Breakdown by Business'
   },
 
   colors: ['#3AAFA9','#40af3a','#a93aaf','#af3a40'],
@@ -493,6 +493,7 @@ Highcharts.chart('container', {
     type: 'category',
     crosshair: true,
     categories: [
+      'Total',
       '% View',
       '% Edit',
       '% Delete',
@@ -527,8 +528,8 @@ Highcharts.chart('container', {
   plotOptions: {
     series: {
       label: {
-        minFontSize: 5,
-        maxFontSize: 25,
+        minFontSize: 6,
+        maxFontSize: 18,
         style: {
           color: 'rgba(255,255,255,1)'
         }
@@ -538,54 +539,54 @@ Highcharts.chart('container', {
 
 
   series: [{
-    name: "Business",
+    name: "Business: Education",
     data: [
-      1386,1810,988,1000
+      4729,1819,1511,2061,1000
     ]
   }, {
-    name: "Education",
+    name: "Business: InfoTech",
     data: [
-      349,450,248,669
+      3637,1576,1450,1774,669
     ]
   }, {
-    name: "Entertainment",
+    name: "Business: Shopping",
     data: [
-      207,284,152,411
+      1652,625,570,689,411
     ]
   }, {
-    name: "Shopping",
+    name: "Business: Entertainment",
     data: [
-      218,278,126,322
+      661,267,232,306,322
     ]
   }, {
-    name: "Adult",
+    name: "Business: Economy&Finance",
     data: [
-      88,132,84,160
+      669,282,232,242,160
     ]
   }, {    
-    name: "InfoTech",
+    name: "Business: Travel",
     data: [
-      60,94,52,154
+      370,185,160,209,154
     ]
   }, {    
-    name: "Games",
+    name: "Education: Health",
     data: [
-      42,53,38,82
+      311,123,108,135,82
     ]
       }, {    
-    name: "Sports",
+    name: "Business: Food&Recipes",
     data: [
-      38,53,31,66
+      268,99,69,126,66
     ]
       }, {    
-    name: "Travel",
+    name: "Entertainment: Sports",
     data: [
-      24,33,17,42
+      187,89,88,114,42
     ]
       }, {    
-    name: "Economy&Finance",
+    name: "Education: InfoTech",
     data: [
-      23,28,12,35
+      348,111,91,105,35
     ]}
   ],
 

@@ -470,3 +470,128 @@
         
         
 })(jQuery);
+
+
+var colors = Highcharts.getOptions().colors;
+Highcharts.chart('container', {
+
+  chart: {
+    type: 'streamgraph',
+    marginBottom: 30
+  },
+    title: {
+    floating: false,
+    align: 'left',
+    text: 'Proporation of Companies by Business'
+  },
+
+  colors: ['#3AAFA9','#40af3a','#a93aaf','#af3a40'],
+
+
+  xAxis: {
+    maxPadding: 0,
+    type: 'category',
+    crosshair: true,
+    categories: [
+      '% View',
+      '% Edit',
+      '% Delete',
+      '% Cookies',
+
+    ],
+    labels: {
+      align: 'center',
+      reserveSpace: false,
+      rotation: 0
+    },
+    lineWidth: 0,
+    margin: 20,
+    tickWidth: 0
+  },
+
+  yAxis: {
+    visible: false,
+    startOnTick: false,
+    endOnTick: false
+  },
+
+  legend: {
+    enabled: true,
+    align: 'right',
+    verticalAlign: 'top',
+    layout: 'vertical',
+    x: 0,
+    y: 250
+  },
+
+  plotOptions: {
+    series: {
+      label: {
+        minFontSize: 5,
+        maxFontSize: 25,
+        style: {
+          color: 'rgba(255,255,255,1)'
+        }
+      }
+    }
+  },
+
+
+  series: [{
+    name: "Business",
+    data: [
+      1386,1810,988,1000
+    ]
+  }, {
+    name: "Education",
+    data: [
+      349,450,248,669
+    ]
+  }, {
+    name: "Entertainment",
+    data: [
+      207,284,152,411
+    ]
+  }, {
+    name: "Shopping",
+    data: [
+      218,278,126,322
+    ]
+  }, {
+    name: "Adult",
+    data: [
+      88,132,84,160
+    ]
+  }, {    
+    name: "InfoTech",
+    data: [
+      60,94,52,154
+    ]
+  }, {    
+    name: "Games",
+    data: [
+      42,53,38,82
+    ]
+      }, {    
+    name: "Sports",
+    data: [
+      38,53,31,66
+    ]
+      }, {    
+    name: "Travel",
+    data: [
+      24,33,17,42
+    ]
+      }, {    
+    name: "Economy&Finance",
+    data: [
+      23,28,12,35
+    ]}
+  ],
+
+  exporting: {
+    sourceWidth: 700,
+    sourceHeight: 600
+  }
+
+});

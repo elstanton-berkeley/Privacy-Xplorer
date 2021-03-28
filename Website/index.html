@@ -34,6 +34,14 @@
     ================================================== -->
     <script src="js/modernizr.js"></script>
     <script src="js/pace.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/streamgraph.js"></script>
+    <script src="https://code.highcharts.com/modules/series-label.js"></script>
+    <script src="https://code.highcharts.com/modules/annotations.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <script src="https://code.highcharts.com/themes/high-contrast-dark.js"></script>
 
     <!-- favicons
     ================================================== -->
@@ -42,10 +50,17 @@
 
 </head>
 
+<!-- ******************************************************************************** -->
+<!-- ******************************************************************************** -->
+<!-- ******************************************************************************** -->
+
+
 <body id="top">
 
-    <!-- header
-    ================================================== -->
+<!-- ******************************************************************************** -->
+<!-- ******************************************************************************** -->
+<!-- ******************************************************************************** -->
+
     <header class="s-header">
 
 
@@ -71,7 +86,7 @@
                     <li>
                         <a href="https://github.com/elstanton-berkeley/Privacy-Xplorer"><i class="fa fa-github"></i></a>
                     </li>
-                     <li>
+                    <li>
                         <a href="https://people.ischool.berkeley.edu/~els/Capstone/Presentation/#slide=1"><i class="fa fa-slideshare"></i></a>
                     </li>
                 </ul>
@@ -88,8 +103,10 @@
     </header> <!-- end s-header -->
 
 
-    <!-- home
-    ================================================== -->
+<!-- ******************************************************************************** -->
+<!-- ******************************************************************************** -->
+<!-- ******************************************************************************** -->
+
     <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/data_privacy_lock.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
 
         <div class="overlay"></div>
@@ -112,7 +129,7 @@
                     <a href="#about" class="smoothscroll btn btn--stroke">
                         Learn a bit more
                     </a>
-                    <a href="#about" class="smoothscroll btn btn--stroke">
+                    <a href="#intro_data" class="smoothscroll btn btn--stroke">
                         Dive into the data
                     </a>
                 </div>
@@ -130,21 +147,12 @@
         </div> <!-- end home-content -->
 
 
-        <ul class="home-social">
-            <li>
-                <a href="https://github.com/elstanton-berkeley/Privacy-Xplorer"><i class="fa fa-github"" aria-hidden="true"></i><span>GitHub</span></a>
-            </li>
-             <li>
-                <a href="https://people.ischool.berkeley.edu/~els/Capstone/Presentation/#slide=1"><i class="fa fa-slideshare"" aria-hidden="true"></i><span>Webslides</span></a>
-            </li>
-        </ul>
-        <!-- end home-social -->
 
     </section> <!-- end s-home -->
 
-
-    <!-- about
-    ================================================== -->
+<!-- ******************************************************************************** -->
+<!-- ******************************************************************************** -->
+<!-- ******************************************************************************** -->
     <section id='about' class="s-about">
 
         <div class="row section-header has-bottom-sep" data-aos="fade-up">
@@ -211,38 +219,14 @@
 
                 </div><!-- end testimonials -->
 
-<!--
-        <div class="row about-stats stats block-1-4 block-m-1-2 block-mob-full" data-aos="fade-up">
 
-
-
-
-            <div class="col-block stats__col ">
-                <div class="stats__count">201</div>
-                <h7>Avg. Hours of Privacy Policies</h7>
-                <h7>a person has to read</h7>
-            </div>
-            <div class="col-block stats__col">
-                <div class="stats__count">10</div>
-                <h6>years worth of data</h5>
-            </div>
-            <div class="col-block stats__col">
-                <div class="stats__count">900</div>
-                <h6>Thousand Invidiaul Policies</h6>
-            </div>
-            <div class="col-block stats__col">
-                <div class="stats__count">102</div>
-                <h6>Some other stat</h6>
-            </div>
-
-        </div> -->
 
 
     </section> <!-- end s-about -->
 
-
-    <!-- services
-    ================================================== -->
+<!-- ******************************************************************************** -->
+<!-- ******************************************************************************** -->
+<!-- ******************************************************************************** -->
 
 
     <section id='what_is_a_policy' class="s-about" style = "background: #FFFFFF">
@@ -311,40 +295,15 @@
 
                 </div><!-- end testimonials -->
 
-<!--
-        <div class="row about-stats stats block-1-4 block-m-1-2 block-mob-full" data-aos="fade-up">
-
-
-
-
-            <div class="col-block stats__col ">
-                <div class="stats__count">201</div>
-                <h7>Avg. Hours of Privacy Policies</h7>
-                <h7>a person has to read</h7>
-            </div>
-            <div class="col-block stats__col">
-                <div class="stats__count">10</div>
-                <h6>years worth of data</h5>
-            </div>
-            <div class="col-block stats__col">
-                <div class="stats__count">900</div>
-                <h6>Thousand Invidiaul Policies</h6>
-            </div>
-            <div class="col-block stats__col">
-                <div class="stats__count">102</div>
-                <h6>Some other stat</h6>
-            </div>
-
-        </div> -->
-
 
     </section> <!-- end s-about -->
 
-    <!-- services
-    ================================================== -->
+<!-- ******************************************************************************** -->
+<!-- ******************************************************************************** -->
+<!-- ******************************************************************************** -->
 
 
-    <section id='services' class="s-services">
+    <section id='intro_data' class="s-services">
         <div class="row about-stats stats block-1-4 block-m-1-2 block-mob-full" data-aos="fade-up">
             <h1 class="display-2 ">A quick look at the numbers</h1>
 
@@ -352,149 +311,41 @@
             <div class="col-full">
 
 
-            <div class="col-block stats__col ">
-                <div class="stats__count">201</div>
-                <h5>hours of reading time for the amount </h5>
-                <h5>of privacy policies encountered in a year</h5>
-            </div>
-            <div class="col-block stats__col">
-                <div class="stats__count">48</div>
-                <h5>percent increate in companies</h5>
-                <h5>that allow for data deletion.</h5>
-            </div>
-            <div class="col-block stats__col">
-                <div class="stats__count">15</div>
-                <h5>percent of companies with no</h5>
-                <h5>GDPR policies</h5>
-            </div>
-            <div class="col-block stats__col">
-                <div class="stats__count">102</div>
-                <h5>Some other stat</h5>
-            </div>
+                <div class="col-block stats__col ">
+                    <div class="stats__count">201</div>
+                    <h5>hours of reading time for the amount </h5>
+                    <h5>of privacy policies encountered in a year</h5>
+                </div>
+                <div class="col-block stats__col">
+                    <div class="stats__count">48</div>
+                    <h5>percent increate in companies</h5>
+                    <h5>that allow for data deletion.</h5>
+                </div>
+                <div class="col-block stats__col">
+                    <div class="stats__count">15</div>
+                    <h5>percent of companies with no</h5>
+                    <h5>GDPR policies</h5>
+                </div>
+                <div class="col-block stats__col">
+                    <div class="stats__count">102</div>
+                    <h5>Some other stat</h5>
+                </div>
 
-        </div>
-              <!--  <h3 class="subhead">Changes in GDPR</h3> -->
-              <!--  <h1 class="display-2">A quick summary view</h1> -->
-            <div class='tableauPlaceholder' id='viz1615746661432' style='position: absolute; top: 50%'>
-                <noscript><a href='#'>
-                    <img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;to&#47;totaldataoverview&#47;Dashboard1&#47;1_rss.png' style='border: none' />
-                </a></noscript>
-                <object class='tableauViz'  style='display:none;'>
-                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-                    <param name='embed_code_version' value='3' />
-                    <param name='site_root' value='' />
-                    <param name='name' value='totaldataoverview&#47;Dashboard1' />
-                    <param name='tabs' value='no' />
-                    <param name='toolbar' value='yes' />
-                    <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;to&#47;totaldataoverview&#47;Dashboard1&#47;1.png' />
-                    <param name='animate_transition' value='yes' />
-                    <param name='display_static_image' value='yes' />
-                    <param name='display_spinner' value='yes' />
-                    <param name='display_overlay' value='yes' />
-                    <param name='display_count' value='yes' />
-                    <param name='language' value='en' />
-                    <param name='filter' value='publish=yes' />
-                </object>
             </div>
-            <script type='text/javascript'>
-                                var divElement = document.getElementById('viz1615746661432');
-                                var vizElement = divElement.getElementsByTagName('object')[0];
-                                if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';}
-                                else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';}
-                                else { vizElement.style.width='100%';vizElement.style.height='927px';}
-                                var scriptElement = document.createElement('script');
-                                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-                                vizElement.parentNode.insertBefore(scriptElement, vizElement);
-                            </script>
+    
+            <figure class="highcharts-figure">
+              <div id="container"></div>
+            </figure>
+
         </div>
     </section>
 
- <!--
-        <div class="row services-list block-1-2 block-tab-full">
-
-            <div class="col-block service-item" data-aos="fade-up">
-                <div class="service-icon">
-                    <i class="icon-paint-brush"></i>
-                </div>
-                <div class="service-text">
-                    <h3 class="h2">Brand Identity</h3>
-                    <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium.
-                    Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
-                    Sunt suscipit voluptas ipsa in tempora esse soluta sint.
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-block service-item" data-aos="fade-up">
-                <div class="service-icon">
-                    <i class="icon-group"></i>
-                </div>
-                <div class="service-text">
-                    <h3 class="h2">Illustration</h3>
-                    <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium.
-                    Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
-                    Sunt suscipit voluptas ipsa in tempora esse soluta sint.
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-block service-item" data-aos="fade-up">
-                <div class="service-icon">
-                    <i class="icon-megaphone"></i>
-                </div>
-                <div class="service-text">
-                    <h3 class="h2">Marketing</h3>
-                    <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium.
-                    Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
-                    Sunt suscipit voluptas ipsa in tempora esse soluta sint.
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-block service-item" data-aos="fade-up">
-                <div class="service-icon">
-                    <i class="icon-earth"></i>
-                </div>
-                <div class="service-text">
-                    <h3 class="h2">Web Design</h3>
-                    <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium.
-                    Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
-                    Sunt suscipit voluptas ipsa in tempora esse soluta sint.
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-block service-item" data-aos="fade-up">
-                <div class="service-icon">
-                    <i class="icon-cube"></i>
-                </div>
-                <div class="service-text">
-                    <h3 class="h2">Packaging Design</h3>
-                    <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium.
-                    Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
-                    Sunt suscipit voluptas ipsa in tempora esse soluta sint.
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-block service-item" data-aos="fade-up">
-                <div class="service-icon"><i class="icon-lego-block"></i></div>
-                <div class="service-text">
-                    <h3 class="h2">Web Development</h3>
-                    <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium.
-                    Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
-                    Sunt suscipit voluptas ipsa in tempora esse soluta sint.
-                    </p>
-                </div>
-            </div>
-
-        </div>
-
-    </section>  -->
 
 
-    <!-- works
-    ================================================== -->
+<!-- ******************************************************************************** -->
+<!-- ******************************************************************************** -->
+<!-- ******************************************************************************** -->
+
     <section id='works' class="s-works">
 
         <div class="intro-wrap">

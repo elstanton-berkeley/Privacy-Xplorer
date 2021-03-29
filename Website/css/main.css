@@ -120,7 +120,7 @@ h1, h2, h3, h4, h5, h6,
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
-    margin-top: 6rem;
+    margin-top: 4rem;
     margin-bottom: 1.8rem;
 }
 
@@ -1307,7 +1307,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 .section-header {
     text-align: center;
     position: relative;
-    margin-bottom: 3.6rem;
+    /* margin-bottom: 3.6rem; */
     max-width: 960px;
 }
 
@@ -2782,8 +2782,8 @@ html.no-csstransitions .home-content__main {
  * ## testimonials
  * ------------------------------------------------------------------- */
 .clients-testimonials {
-    margin-top: 4.2rem;
-    padding-top: 7.2rem;
+    /* margin-top: 4.2rem; */
+    /* padding-top: 7.2rem; */
     text-align: center;
     position: relative;
 }

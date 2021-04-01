@@ -472,127 +472,13 @@
 })(jQuery);
 
 
-var colors = Highcharts.getOptions().colors;
-Highcharts.chart('container', {
-
-  chart: {
-    type: 'streamgraph',
-    marginBottom: 30
-  },
-    title: {
-    floating: false,
-    align: 'left',
-    text: '2019: Breakdown by Business'
-  },
-
-  colors: ['#3AAFA9','#40af3a','#a93aaf','#af3a40'],
+/* ------------------------------------------------------ */
+/* ------------------------------------------------------ */
+/* ------------------------------------------------------ */
+/* ------------------------------------------------------ */
 
 
-  xAxis: {
-    maxPadding: 0,
-    type: 'category',
-    crosshair: true,
-    categories: [
-      'Total',
-      '% View',
-      '% Edit',
-      '% Delete',
-      '% Cookies',
-
-    ],
-    labels: {
-      align: 'center',
-      reserveSpace: false,
-      rotation: 0
-    },
-    lineWidth: 0,
-    margin: 20,
-    tickWidth: 0
-  },
-
-  yAxis: {
-    visible: false,
-    startOnTick: false,
-    endOnTick: false
-  },
-
-  legend: {
-    enabled: true,
-    align: 'right',
-    verticalAlign: 'top',
-    layout: 'vertical',
-    x: 0,
-    y: 250
-  },
-
-  plotOptions: {
-    series: {
-      label: {
-        minFontSize: 6,
-        maxFontSize: 18,
-        style: {
-          color: 'rgba(255,255,255,1)'
-        }
-      }
-    }
-  },
-
-
-  series: [{
-    name: "Business: Education",
-    data: [
-      4729,1819,1511,2061,1000
-    ]
-  }, {
-    name: "Business: InfoTech",
-    data: [
-      3637,1576,1450,1774,669
-    ]
-  }, {
-    name: "Business: Shopping",
-    data: [
-      1652,625,570,689,411
-    ]
-  }, {
-    name: "Business: Entertainment",
-    data: [
-      661,267,232,306,322
-    ]
-  }, {
-    name: "Business: Economy&Finance",
-    data: [
-      669,282,232,242,160
-    ]
-  }, {    
-    name: "Business: Travel",
-    data: [
-      370,185,160,209,154
-    ]
-  }, {    
-    name: "Education: Health",
-    data: [
-      311,123,108,135,82
-    ]
-      }, {    
-    name: "Business: Food&Recipes",
-    data: [
-      268,99,69,126,66
-    ]
-      }, {    
-    name: "Entertainment: Sports",
-    data: [
-      187,89,88,114,42
-    ]
-      }, {    
-    name: "Education: InfoTech",
-    data: [
-      348,111,91,105,35
-    ]}
-  ],
-
-  exporting: {
-    sourceWidth: 700,
-    sourceHeight: 600
-  }
-
-});
+/* ------------------------------------------------------ */
+/* ------------------------------------------------------ */
+/* ------------------------------------------------------ */
+/* ------------------------------------------------------ */

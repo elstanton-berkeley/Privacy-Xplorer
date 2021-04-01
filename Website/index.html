@@ -34,14 +34,14 @@
     ================================================== -->
     <script src="js/modernizr.js"></script>
     <script src="js/pace.min.js"></script>
-    <script src="https://code.highcharts.com/highcharts.js"></script>
-    <script src="https://code.highcharts.com/modules/streamgraph.js"></script>
-    <script src="https://code.highcharts.com/modules/series-label.js"></script>
-    <script src="https://code.highcharts.com/modules/annotations.js"></script>
-    <script src="https://code.highcharts.com/modules/exporting.js"></script>
-    <script src="https://code.highcharts.com/modules/export-data.js"></script>
-    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
-    <script src="https://code.highcharts.com/themes/high-contrast-dark.js"></script>
+
+    <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+    <script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+    <script src="https://cdn.amcharts.com/lib/4/maps.js"></script>
+    <script src="https://cdn.amcharts.com/lib/4/geodata/usaAlbersLow.js"></script>
+    <script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+
+
 
     <!-- favicons
     ================================================== -->
@@ -405,9 +405,10 @@
 
     </section> <!-- end s-about -->
 
+
 <!-- ******************************************************************************** -->
 <!-- ******************************************************************************** -->
-<!-- *********************************  intro_data ***************************************** -->
+<!-- *********************************  numbers that tick up ***************************************** -->
 
 
     <section id='intro_data' class="s-services">
@@ -417,7 +418,7 @@
             <div class="col-full">
 
                 <div class="col-block stats__col ">
-                    <div class="stats__count">39</div>
+                    <div class="stats__count">39</div> 
                     <h5>percent of websites allow for</h5>
                     <h5>view access of personal details.</h5>
                 </div>
@@ -442,12 +443,139 @@
 
             </div>
 
-            <figure class="highcharts-figure">
-              <div id="container"></div>
-            </figure>
 
-        </div>
-    </section>
+
+<!-- ******************************************************************************** -->
+<!-- ******************************************************************************** -->
+<!-- *********************************  high level % chart ***************************************** -->
+
+
+<h1 class="display">Number of company privacy policies by feature</h1>
+<div id="chartdiv"></div>
+<script>
+
+
+// Themes begin
+am4core.useTheme(am4themes_animated);
+// Themes end
+
+var chart = am4core.create("chartdiv", am4charts.XYChart);
+
+chart.data = [
+{ year: "2004", Number_of_View: 1254, Number_of_Edit: 1211, Number_of_Delete: 1235},
+{ year: "2005", Number_of_View: 1578, Number_of_Edit: 1476, Number_of_Delete: 1489},
+{ year: "2006", Number_of_View: 2036, Number_of_Edit: 1885, Number_of_Delete: 1898},
+{ year: "2007", Number_of_View: 2404, Number_of_Edit: 2255, Number_of_Delete: 2343},
+{ year: "2008", Number_of_View: 2675, Number_of_Edit: 2572, Number_of_Delete: 2767},
+{ year: "2009", Number_of_View: 2920, Number_of_Edit: 2765, Number_of_Delete: 3165},
+{ year: "2010", Number_of_View: 3549, Number_of_Edit: 3344, Number_of_Delete: 3933},
+{ year: "2011", Number_of_View: 4759, Number_of_Edit: 4540, Number_of_Delete: 5663},
+{ year: "2012", Number_of_View: 5456, Number_of_Edit: 5105, Number_of_Delete: 6271},
+{ year: "2013", Number_of_View: 6235, Number_of_Edit: 5877, Number_of_Delete: 7313},
+{ year: "2014", Number_of_View: 7078, Number_of_Edit: 6776, Number_of_Delete: 8472},
+{ year: "2015", Number_of_View: 7967, Number_of_Edit: 7592, Number_of_Delete: 9468},
+{ year: "2016", Number_of_View: 8678, Number_of_Edit: 8348, Number_of_Delete: 10310},
+{ year: "2017", Number_of_View: 8889, Number_of_Edit: 8462, Number_of_Delete: 10121},
+{ year: "2018", Number_of_View: 11415, Number_of_Edit: 10485, Number_of_Delete: 12845},
+{ year: "2019", Number_of_View: 14880, Number_of_Edit: 13232, Number_of_Delete: 16620},
+
+
+];
+
+chart.dateFormatter.inputDateFormat = "yyyy";
+var dateAxis = chart.xAxes.push(new am4charts.DateAxis());
+dateAxis.renderer.minGridDistance = 60;
+dateAxis.startLocation = 0.5;
+dateAxis.endLocation = 0.5;
+dateAxis.baseInterval = {
+  timeUnit: "year",
+  count: 1
+}
+
+var valueAxis = chart.yAxes.push(new am4charts.ValueAxis());
+valueAxis.tooltip.disabled = true;
+
+var series = chart.series.push(new am4charts.LineSeries());
+series.dataFields.dateX = "year";
+series.name = "# of Policies with View Access";
+series.dataFields.valueY = "Number_of_View";
+series.tooltipText = "[#000]{valueY.value}[/]";
+series.tooltip.background.fill = am4core.color("#FFF");
+series.tooltip.getStrokeFromObject = true;
+series.tooltip.background.strokeWidth = 3;
+series.tooltip.getFillFromObject = false;
+series.fillOpacity = 0.6;
+series.strokeWidth = 2;
+series.stacked = true;
+
+var series2 = chart.series.push(new am4charts.LineSeries());
+series2.name = "# of Policies with Edit Access";
+series2.dataFields.dateX = "year";
+series2.dataFields.valueY = "Number_of_Edit";
+series2.tooltipText = "[#000]{valueY.value}[/]";
+series2.tooltip.background.fill = am4core.color("#FFF");
+series2.tooltip.getFillFromObject = false;
+series2.tooltip.getStrokeFromObject = true;
+series2.tooltip.background.strokeWidth = 3;
+series2.sequencedInterpolation = true;
+series2.fillOpacity = 0.6;
+series2.stacked = true;
+series2.strokeWidth = 2;
+
+var series3 = chart.series.push(new am4charts.LineSeries());
+series3.name = "# of Policies with Delete Access";
+series3.dataFields.dateX = "year";
+series3.dataFields.valueY = "Number_of_Delete";
+series3.tooltipText = "[#000]{valueY.value}[/]";
+series3.tooltip.background.fill = am4core.color("#FFF");
+series3.tooltip.getFillFromObject = false;
+series3.tooltip.getStrokeFromObject = true;
+series3.tooltip.background.strokeWidth = 3;
+series3.sequencedInterpolation = true;
+series3.fillOpacity = 0.6;
+series3.defaultState.transitionDuration = 1000;
+series3.stacked = true;
+series3.strokeWidth = 2;
+
+chart.cursor = new am4charts.XYCursor();
+chart.cursor.xAxis = dateAxis;
+chart.scrollbarX = new am4core.Scrollbar();
+
+// Add a legend
+chart.legend = new am4charts.Legend();
+chart.legend.position = "top";
+
+// axis ranges
+var range = dateAxis.axisRanges.create();
+range.date = new Date(2016, 0, 1);
+range.endDate = new Date(2018, 0, 1);
+range.axisFill.fill = chart.colors.getIndex(7);
+range.axisFill.fillOpacity = 0.2;
+
+range.label.text = "Announcement and Implementation of GDPR";
+range.label.inside = true;
+range.label.rotation = 90;
+range.label.horizontalCenter = "right";
+range.label.verticalCenter = "bottom";
+
+
+
+</script>
+
+
+<!-- ******************************************************************************** -->
+<!-- ******************************************************************************** -->
+<!-- *********************************  high level % chart ***************************************** -->
+
+
+<h1 class="display">Number of company privacy policies by feature</h1>
+<div id="chartdiv-2"></div>
+
+
+</div>
+
+</section>
+
 
 
 

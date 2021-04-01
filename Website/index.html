@@ -438,7 +438,7 @@ valueAxis.tooltip.disabled = true;
 
 var series = chart.series.push(new am4charts.LineSeries());
 series.dataFields.dateX = "year";
-series.name = "# of Policies with View Access";
+series.name = "% View";
 series.dataFields.valueY = "Number_of_View";
 series.tooltipText = "[#000]{valueY.value}[/]";
 series.tooltip.background.fill = am4core.color("#FFF");
@@ -450,7 +450,7 @@ series.strokeWidth = 2;
 series.stacked = true;
 
 var series2 = chart.series.push(new am4charts.LineSeries());
-series2.name = "# of Policies with Edit Access";
+series2.name = "% Edit";
 series2.dataFields.dateX = "year";
 series2.dataFields.valueY = "Number_of_Edit";
 series2.tooltipText = "[#000]{valueY.value}[/]";
@@ -464,7 +464,7 @@ series2.stacked = true;
 series2.strokeWidth = 2;
 
 var series3 = chart.series.push(new am4charts.LineSeries());
-series3.name = "# of Policies with Delete Access";
+series3.name = "% Delete";
 series3.dataFields.dateX = "year";
 series3.dataFields.valueY = "Number_of_Delete";
 series3.tooltipText = "[#000]{valueY.value}[/]";
@@ -577,7 +577,7 @@ valueAxis.min = 0;
 
 var series1 = chart2.series.push(new am4charts.RadarColumnSeries());
 series1.columns.template.radarColumn.strokeOpacity = 1;
-series1.name = "Series 1";
+series1.name = "% View";
 series1.dataFields.categoryX = "category";
 series1.columns.template.tooltipText = "{name}: {valueY.value}";
 series1.dataFields.valueY = "value1";
@@ -586,7 +586,7 @@ series1.stacked = true;
 var series2 = chart2.series.push(new am4charts.RadarColumnSeries());
 series2.columns.template.radarColumn.strokeOpacity = 1;
 series2.columns.template.tooltipText = "{name}: {valueY.value}";
-series2.name = "Series 2";
+series2.name = "% Edit";
 series2.dataFields.categoryX = "category";
 series2.dataFields.valueY = "value2";
 series2.stacked = true;
@@ -594,18 +594,14 @@ series2.stacked = true;
 var series3 = chart2.series.push(new am4charts.RadarColumnSeries());
 series3.columns.template.radarColumn.strokeOpacity = 1;
 series3.columns.template.tooltipText = "{name}: {valueY.value}";  
-series3.name = "Series 3";
+series3.name = "% Delete";
 series3.dataFields.categoryX = "category";
 series3.dataFields.valueY = "value3";
 series3.stacked = true;
 
-var series4 = chart2.series.push(new am4charts.RadarColumnSeries());
-series4.columns.template.radarColumn.strokeOpacity = 1;
-series4.columns.template.tooltipText = "{name}: {valueY.value}";
-series4.name = "Series 4";
-series4.dataFields.categoryX = "category";
-series4.dataFields.valueY = "value4";
-series4.stacked = true;
+// Add a legend
+chart2.legend = new am4charts.Legend();
+chart2.legend.position = "top";
 
 chart2.seriesContainer.zIndex = -1;
 

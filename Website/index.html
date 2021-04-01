@@ -462,22 +462,26 @@ am4core.useTheme(am4themes_animated);
 var chart = am4core.create("chartdiv", am4charts.XYChart);
 
 chart.data = [
-{ year: "2004", Number_of_View: 1254, Number_of_Edit: 1211, Number_of_Delete: 1235},
-{ year: "2005", Number_of_View: 1578, Number_of_Edit: 1476, Number_of_Delete: 1489},
-{ year: "2006", Number_of_View: 2036, Number_of_Edit: 1885, Number_of_Delete: 1898},
-{ year: "2007", Number_of_View: 2404, Number_of_Edit: 2255, Number_of_Delete: 2343},
-{ year: "2008", Number_of_View: 2675, Number_of_Edit: 2572, Number_of_Delete: 2767},
-{ year: "2009", Number_of_View: 2920, Number_of_Edit: 2765, Number_of_Delete: 3165},
-{ year: "2010", Number_of_View: 3549, Number_of_Edit: 3344, Number_of_Delete: 3933},
-{ year: "2011", Number_of_View: 4759, Number_of_Edit: 4540, Number_of_Delete: 5663},
-{ year: "2012", Number_of_View: 5456, Number_of_Edit: 5105, Number_of_Delete: 6271},
-{ year: "2013", Number_of_View: 6235, Number_of_Edit: 5877, Number_of_Delete: 7313},
-{ year: "2014", Number_of_View: 7078, Number_of_Edit: 6776, Number_of_Delete: 8472},
-{ year: "2015", Number_of_View: 7967, Number_of_Edit: 7592, Number_of_Delete: 9468},
-{ year: "2016", Number_of_View: 8678, Number_of_Edit: 8348, Number_of_Delete: 10310},
-{ year: "2017", Number_of_View: 8889, Number_of_Edit: 8462, Number_of_Delete: 10121},
-{ year: "2018", Number_of_View: 11415, Number_of_Edit: 10485, Number_of_Delete: 12845},
-{ year: "2019", Number_of_View: 14880, Number_of_Edit: 13232, Number_of_Delete: 16620},
+{ year: "2000", Number_of_View: 12.4229492650545, Number_of_Edit: 17.5912754860123, Number_of_Delete: 16.4058795637743},
+{ year: "2001", Number_of_View: 15.6728067436778, Number_of_Edit: 19.5753980643147, Number_of_Delete: 18.2016859194505},
+{ year: "2002", Number_of_View: 17.3913043478261, Number_of_Edit: 18.9006533002929, Number_of_Delete: 17.5264699256589},
+{ year: "2003", Number_of_View: 18.0451127819549, Number_of_Edit: 18.3646616541353, Number_of_Delete: 18.4398496240602},
+{ year: "2004", Number_of_View: 19.0086402910414, Number_of_Edit: 18.3568288616038, Number_of_Delete: 18.720630589662},
+{ year: "2005", Number_of_View: 20.2281758748878, Number_of_Edit: 18.9206511985643, Number_of_Delete: 19.0872965004487},
+{ year: "2006", Number_of_View: 20.7712711691492, Number_of_Edit: 19.2307692307692, Number_of_Delete: 19.3633952254642},
+{ year: "2007", Number_of_View: 20.7062876830319, Number_of_Edit: 19.4229112833764, Number_of_Delete: 20.1808785529716},
+{ year: "2008", Number_of_View: 19.8663200891199, Number_of_Edit: 19.1013739324174, Number_of_Delete: 20.5495729669514},
+{ year: "2009", Number_of_View: 19.6513897301299, Number_of_Edit: 18.6082508917155, Number_of_Delete: 21.3002220876237},
+{ year: "2010", Number_of_View: 19.7287231085663, Number_of_Edit: 18.5891378064373, Number_of_Delete: 21.8633609427984},
+{ year: "2011", Number_of_View: 20.6169042152233, Number_of_Edit: 19.6681540527661, Number_of_Delete: 24.533206255686},
+{ year: "2012", Number_of_View: 21.1768358950474, Number_of_Edit: 19.8144698028256, Number_of_Delete: 24.3401645707188},
+{ year: "2013", Number_of_View: 21.3556651596109, Number_of_Edit: 20.1294697903822, Number_of_Delete: 25.0479517742156},
+{ year: "2014", Number_of_View: 21.8889163780307, Number_of_Edit: 20.9549727857496, Number_of_Delete: 26.1999010390896},
+{ year: "2015", Number_of_View: 22.650896994854, Number_of_Edit: 21.5847382935775, Number_of_Delete: 26.9183748898303},
+{ year: "2016", Number_of_View: 23.5080590545849, Number_of_Edit: 22.6141135039957, Number_of_Delete: 27.929026141135},
+{ year: "2017", Number_of_View: 24.5701807728454, Number_of_Edit: 23.3899054674111, Number_of_Delete: 27.9755652606556},
+{ year: "2018", Number_of_View: 35.9075180874489, Number_of_Edit: 32.9820698332809, Number_of_Delete: 40.4057879836427},
+{ year: "2019", Number_of_View: 39.364037988413, Number_of_Edit: 35.0043649638898, Number_of_Delete: 43.9670908177032},
 
 
 ];
@@ -549,16 +553,28 @@ chart.legend.position = "top";
 var range = dateAxis.axisRanges.create();
 range.date = new Date(2016, 0, 1);
 range.endDate = new Date(2018, 0, 1);
-range.axisFill.fill = chart.colors.getIndex(7);
+range.axisFill.fill = chart.colors.getIndex(4);
 range.axisFill.fillOpacity = 0.2;
 
-range.label.text = "Announcement and Implementation of GDPR";
+range.label.text = "Announcement of GDPR";
 range.label.inside = true;
 range.label.rotation = 90;
 range.label.horizontalCenter = "right";
 range.label.verticalCenter = "bottom";
 
 
+// axis ranges
+var range2 = dateAxis.axisRanges.create();
+range2.date = new Date(2018, 0, 1);
+range2.endDate = new Date(2019, 12, 1);
+range2.axisFill.fill = chart.colors.getIndex(4);
+range2.axisFill.fillOpacity = 0.4;
+
+range2.label.text = "Implementation of GDPR";
+range2.label.inside = true;
+range2.label.rotation = 90;
+range2.label.horizontalCenter = "right";
+range2.label.verticalCenter = "bottom";
 
 </script>
 
@@ -571,6 +587,130 @@ range.label.verticalCenter = "bottom";
 <h1 class="display">Number of company privacy policies by feature</h1>
 <div id="chartdiv-2"></div>
 
+<script>
+
+// Themes begin
+am4core.useTheme(am4themes_animated);
+// Themes end
+
+var chart_2 = am4core.create("chartdiv-2", am4charts.RadarChart);
+chart_2.hiddenState.properties.opacity = 0; // this creates initial fade-in
+
+
+chart_2.data = [
+  {
+    category: "One",
+    value1: 8,
+    value2: 2,
+    value3: 4,
+    value4: 3
+  },
+  {
+    category: "Two",
+    value1: 11,
+    value2: 4,
+    value3: 2,
+    value4: 4
+  },
+  {
+    category: "Three",
+    value1: 7,
+    value2: 6,
+    value3: 6,
+    value4: 2
+  },
+  {
+    category: "Four",
+    value1: 13,
+    value2: 8,
+    value3: 3,
+    value4: 2
+  },
+  {
+    category: "Five",
+    value1: 12,
+    value2: 10,
+    value3: 5,
+    value4: 1
+  },
+  {
+    category: "Six",
+    value1: 15,
+    value2: 12,
+    value3: 4,
+    value4: 4
+  },
+  {
+    category: "Seven",
+    value1: 9,
+    value2: 14,
+    value3: 6,
+    value4: 2
+  },
+  {
+    category: "Eight",
+    value1: 6,
+    value2: 16,
+    value3: 5,
+    value4: 1
+  }
+];
+chart_2.radius = am4core.percent(95);
+chart_2.startAngle = 270 - 180;
+chart_2.endAngle = 270 + 180;
+chart_2.innerRadius = am4core.percent(60);
+
+var categoryAxis = chart_2.xAxes.push(new am4charts.CategoryAxis());
+categoryAxis.dataFields.category = "category";
+categoryAxis.renderer.labels.template.location = 0.5;
+categoryAxis.renderer.grid.template.strokeOpacity = 0.1;
+categoryAxis.renderer.axisFills.template.disabled = true;
+categoryAxis.mouseEnabled = false;
+
+var valueAxis = chart_2.yAxes.push(new am4charts.ValueAxis());
+valueAxis.tooltip.disabled = true;
+valueAxis.renderer.grid.template.strokeOpacity = 0.05;
+valueAxis.renderer.axisFills.template.disabled = true;
+valueAxis.renderer.axisAngle = 260;
+valueAxis.renderer.labels.template.horizontalCenter = "right";
+valueAxis.min = 0;
+
+var series1 = chart_2.series.push(new am4charts.RadarColumnSeries());
+series1.columns.template.radarColumn.strokeOpacity = 1;
+series1.name = "Series 1";
+series1.dataFields.categoryX = "category";
+series1.columns.template.tooltipText = "{name}: {valueY.value}";
+series1.dataFields.valueY = "value1";
+series1.stacked = true;
+
+var series2 = chart_2.series.push(new am4charts.RadarColumnSeries());
+series2.columns.template.radarColumn.strokeOpacity = 1;
+series2.columns.template.tooltipText = "{name}: {valueY.value}";
+series2.name = "Series 2";
+series2.dataFields.categoryX = "category";
+series2.dataFields.valueY = "value2";
+series2.stacked = true;
+
+var series3 = chart_2.series.push(new am4charts.RadarColumnSeries());
+series3.columns.template.radarColumn.strokeOpacity = 1;
+series3.columns.template.tooltipText = "{name}: {valueY.value}";  
+series3.name = "Series 3";
+series3.dataFields.categoryX = "category";
+series3.dataFields.valueY = "value3";
+series3.stacked = true;
+
+var series4 = chart_2.series.push(new am4charts.RadarColumnSeries());
+series4.columns.template.radarColumn.strokeOpacity = 1;
+series4.columns.template.tooltipText = "{name}: {valueY.value}";
+series4.name = "Series 4";
+series4.dataFields.categoryX = "category";
+series4.dataFields.valueY = "value4";
+series4.stacked = true;
+
+chart_2.seriesContainer.zIndex = -1;
+
+
+</script>
 
 </div>
 

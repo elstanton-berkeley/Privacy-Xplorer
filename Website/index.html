@@ -306,9 +306,8 @@
             <div class="col-full">
                 <h1 style = "color: #111111">Privacy Xplorer's Analysis</h1>
             </div>
-        </div> <!-- end section-header -->
 
-        <div class="row clients-testimonials has-bottom-sep" data-aos="fade-up">
+        <div class="row clients-testimonials has-bottom-sep">
             <div class="col-full">
                 <div class="testimonials">
 
@@ -380,37 +379,7 @@
 
 
     <section id='intro_data' class="s-services">
-        <div class="row about-stats stats block-1-4 block-m-1-2 block-mob-full" data-aos="fade-up">
-            <h1 class="display-2 ">A quick look at the numbers</h1>
-
-            <div class="col-full">
-
-                <div class="col-block stats__col ">
-                    <div class="stats__count">39</div> 
-                    <h5>percent of websites allow for</h5>
-                    <h5>view access of personal details.</h5>
-                </div>
-
-                <div class="col-block stats__col">
-                    <div class="stats__count">35</div>
-                    <h5>percent of websites allow for</h5>
-                    <h5>edit access of personal details.</h5>
-                </div>
-
-                <div class="col-block stats__col">
-                    <div class="stats__count">44</div>
-                    <h5>percent of websites allow for</h5>
-                    <h5>edit access of personal details.</h5>
-                </div>
-
-                <div class="col-block stats__col">
-                    <div class="stats__count">55</div>
-                    <h5>percent of websites allow for</h5>
-                    <h5>disabling of cookies.</h5>
-                </div>
-
-            </div>
-
+          <div class="row section-header has-bottom-sep" data-aos="fade-up">
 
 
 <!-- ******************************************************************************** -->
@@ -418,7 +387,7 @@
 <!-- *********************************  high level % chart ***************************************** -->
 
 
-<h1 class="display">Number of company privacy policies by feature</h1>
+<h1 class="display-2">Changes in Privacy Policies over the last 20 years</h1>
 <div id="chartdiv"></div>
 <script>
 
@@ -545,14 +514,17 @@ range2.label.horizontalCenter = "right";
 range2.label.verticalCenter = "bottom";
 
 </script>
-
+</div>
 
 <!-- ******************************************************************************** -->
 <!-- ******************************************************************************** -->
 <!-- *********************************  high level % chart ***************************************** -->
 
 </br></br>
-<h1 class="display">2019: Adoption by Business</h1>
+
+          <div class="row section-header has-bottom-sep" data-aos="fade-up">
+
+<h1 class="display-2">2019: Privacy Policy Feature Adoption by Business</h1></br>
 <div id="chartdiv-2"></div>
 
 <script>
@@ -643,14 +615,15 @@ slider.exportable = false;
 slider.events.on("rangechanged", function() {
   var start = slider.start;
 
-  chart2.startAngle = 270 - start * 179 - 1;
-  chart2.endAngle = 270 + start * 179 + 1;
+  chart2.startAngle = 270 - start * 76 - 1;
+  chart2.endAngle = 270 + start * 76 + 1;
 
   valueAxis.renderer.axisAngle = chart2.startAngle;
 });
 
 </script>
 
+</div>
 </div>
 
 </section>

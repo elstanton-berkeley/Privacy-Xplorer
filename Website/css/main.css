@@ -1752,7 +1752,6 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     width: 100%;
     height: 100%;
     min-height: 786px;
-    background-color: transparent;
     position: relative;
     display: table;
 }
@@ -1776,12 +1775,12 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: .6;
-    background-color: #000000;
+    opacity: .4;
+    background-color: #FFDDD2;
 }
 
 .no-js .s-home {
-    background: #000000;
+    background: #FFDDD2;
 }
 
 
@@ -1793,6 +1792,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     width: 100%;
     height: 100%;
     vertical-align: middle;
+    horizontal-align: left;
     padding-bottom: 15.6rem;
     position: relative;
     overflow: hidden;
@@ -1800,22 +1800,23 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 .home-content h3 {
     font-family: "montserrat-medium", sans-serif;
-    font-size: 1.6rem;
-    color: #DEF2F1;
-    text-transform: uppercase;
+    font-size: 2.6rem;
+    color: #;
+/*    text-transform: uppercase; */
     letter-spacing: .3rem;
     position: relative;
     margin-top: 0;
     margin-bottom: 1.2rem;
     margin-left: 6px;
+    color: #006D77;
 }
 
 .home-content h1 {
     font-family: "montserrat-medium", sans-serif;
-    font-size: 6.3rem;
+    font-size: 8.3rem;
     line-height: 1.333;
-    margin-top: 0;
-    color: #83C5Be;
+    margin-top: 120px;
+    color: #006D77;
 }
 
 .home-content__main {
@@ -1830,8 +1831,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 .home-content__buttons .btn {
     width: 215px;
-    border-color: #FFFFFF;
-    color: #FFFFFF;
+    border-color: #006D77;
+    color: #006D77;
     margin: 1.5rem 1.5rem 0 0;
     letter-spacing: .25rem;
     -webkit-transition: all 0.5s ease-in-out;
@@ -1840,8 +1841,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 .home-content__buttons .btn_cent {
     width: 400px;
-    border-color: #FFFFFF;
-    color: #FFFFFF;
+    border-color: #006D77;
+    color: #006D77;
     margin: 1.5rem 1.5rem 0 0;
     letter-spacing: .25rem;
     -webkit-transition: all 0.5s ease-in-out;

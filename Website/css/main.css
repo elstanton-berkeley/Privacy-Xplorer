@@ -1821,7 +1821,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     font-size: 6.3rem;
     line-height: 1.333;
     margin-top: 0;
-    color: #FFFFFF;
+    color: #83C5Be;
 }
 
 .home-content__main {
@@ -2081,7 +2081,7 @@ html.no-csstransitions .home-content__main {
         font-size: 6rem;
     }
     .home-content__main {
-        max-width: 1000px;
+        max-width: 600px;
     }
 }
 
@@ -2090,7 +2090,7 @@ html.no-csstransitions .home-content__main {
         font-size: 5.5rem;
     }
     .home-content__main {
-        max-width: 800px;
+        max-width: 500px;
     }
 }
 
@@ -2178,7 +2178,7 @@ html.no-csstransitions .home-content__main {
         font-size: 3.5rem;
     }
     .home-content__main {
-        text-align: center;
+        text-align: left;
         max-width: none;
         padding-top: 15rem;
         padding-right: 25px;

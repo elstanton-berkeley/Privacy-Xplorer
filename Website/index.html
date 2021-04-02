@@ -1,15 +1,6 @@
 <!DOCTYPE html>
-<!--[if lt IE 9 ]><html class="no-js oldie" lang="en"> <![endif]-->
-<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!-->
 <html class="no-js" lang="en">
-<!--
-<p style="font-size: 20px; color:#FFFFFF;">
-<li><a href="about_project.html" title="new_page">Test This</a></li>
 
- <li><a href="about_project.html" target = "_self">About this site</a><li>
-</p>-->
-<!--<![endif]-->
 
 <head>
 
@@ -40,8 +31,7 @@
     <script src="https://cdn.amcharts.com/lib/4/maps.js"></script>
     <script src="https://cdn.amcharts.com/lib/4/geodata/usaAlbersLow.js"></script>
     <script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
-
-
+    <script src="https://cdn.amcharts.com/lib/4/plugins/timeline.js"></script>
 
     <!-- favicons
     ================================================== -->
@@ -73,7 +63,6 @@
 
                 <ul class="header-nav__list">
                     <li class="current"><a class="smoothscroll"  href="#home" title="home">Home</a></li>
-                    <li><a class="smoothscroll"  href="#mission" title="about">Mission Statement</a></li>
                     <li><a class="smoothscroll"  href="#what_is_a_policy" title="services">Policy Intro</a></li>
                     <li><a class="smoothscroll"  href="#intro_data" title="works">Introduction to Data</a></li>
                     <li><a class="smoothscroll"  href="#intro_data" title="works">Model Overview</a></li>
@@ -108,10 +97,9 @@
 <!-- ******************************************************************************** -->
 <!-- ***************************** home *********************************************** -->
 
-    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/data_privacy_lock.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/updatedbackground.png" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
 
-        <div class="overlay"></div>
-        <div class="shadow-overlay"></div>
+
 
         <div class="home-content">
 
@@ -120,12 +108,14 @@
                 <h1>Welcome to Privacy Xplorer</h1>
 
                 <h3 style="font-size: 2.8rem;">
-                        Mission Statement </br></br>
-                        Privacy Xplorer provides regulators and researchers a platform to quickly view and analyze the impact of data privacy regulations on privacy policies  over time.
+                        Privacy Xplorer provides regulators and researchers a platform to quickly view and analyze the impact of data privacy regulations, primarily GDPR, on privacy policies  over time.  </br></br>
+
+                        Leveraging modern natural language processing techniques, we parsed privacy details from over 1mm policies covering 130,000 websites globally.
                 </h3>
 
+
                 <div class="home-content__buttons">
-                    <a href="#about" class="smoothscroll btn btn--stroke">
+                    <a href="#what_is_a_policy" class="smoothscroll btn btn--stroke">
                         Learn a bit more
                     </a>
                     <a href="#intro_data" class="smoothscroll btn btn--stroke">
@@ -159,62 +149,12 @@
 
           <div class="row section-header has-bottom-sep" data-aos="fade-up">
               <div class="col-full">
-                  <h1 style = "color: #111111">What is a Privacy Policy?</h1>
+
+              <img src="images/InfoIntro.png" width="1200">
+
+
               </div>
-          </div> <!-- end section-header -->
-
-          <div class="row clients-testimonials has-bottom-sep" data-aos="fade-up">
-              <div class="col-full">
-                  <div class="testimonials">
-
-                      <div class="testimonials__slide">
-
-                          <!-- <div class="row section-header has-bottom-sep" data-aos="fade-up">
-                              <div class="col-full">
-                                  <h3>Explain a policy</h3>
-                              </div>
-                          </div>  -->
-                          <!-- end section-header -->
-                          <p style = "font-size: 1.5em"><strong>Privacy Policy:</strong> an internal statement that governs an organization or entity's handling practices of personal information.
-                          <br><br>
-
-                          These policies disclose how a company gathers, uses and manages their customers’ data.
-
-                      </div>
-
-                      <div class="testimonials__slide">
-
-                          <div class="row section-header has-bottom-sep" data-aos="fade-up">
-                              <div class="col-full">
-                                  <h3>Structure</h3>
-                              </div>
-                          </div> <!-- end section-header -->
-                          <p style = "font-size: 1.5em">
-                          Privacy policies are made up of smaller sections, called "segments". Each of these segments, within a company’s privacy policy, has a purpose that provides insight on the kinds of rules or regulations the company follows.</p>
-                          <div class='policy_structure' style='position: relative'>
-                            <a>
-                                <img src="images/intro_v2.JPG" width=relative height="1500" style='border: none' />
-                            </a>
-                          </div>
-                      </div>
-
-                      <div class="testimonials__slide">
-
-                          <div class="row section-header has-bottom-sep" data-aos="fade-up">
-                              <div class="col-full">
-                                  <h3>Increased Complexity</h3>
-                              </div>
-                          </div> <!-- end section-header -->
-
-                          <p style = "font-size: 1.5em">
-                            Over the last twenty years, privacy policies have almost than doubled in length and the legal and technical jargon has become more complex - making it even more difficult for the average person to fully comprehend the content within these policies.
-                            <br><br>
-
-                            This is due to the increase in data privacy regulations.
-                          </p>
-                      </div>
-                  </div><!-- end testimonials -->
-
+          </div>
 
       </section> <!-- end s-about -->
 
@@ -224,158 +164,178 @@
 
 
       <section id='what_is_a_regulation' class="s-about">
-
           <div class="row section-header has-bottom-sep" data-aos="fade-up">
-              <div class="col-full">
-                  <h1 style = "color: #111111">What Are Data Privacy Regulations?</h1>
-              </div>
-          </div> <!-- end section-header -->
 
-          <div class="row clients-testimonials has-bottom-sep" data-aos="fade-up">
-              <div class="col-full">
-                  <div class="testimonials">
+            <h1 style = "color: #FFFFFF">What Are Data Privacy Regulations?</h1>
+              
+                <p style = "font-size: 1.5em; color : #FFFFFF"> Since the 1970s, regulations have been put in place to help govern the collection, use and distribution of consumers's personal information. </br>
 
-                      <div class="testimonials__slide">
+                  <br>More recently, these regulations have been focused on protecting the consumer by requiring companies to disclose what data they track and how it is used. </br></p>
+          
+          
+          <h1 style = "color: #FFFFFF">Privacy Policy Timelines </h1>
+          </div>
+          <div id="chartdiv-3"></div>
 
-                          <div class="row section-header has-bottom-sep" data-aos="fade-up">
-                              <div class="col-full">
-                                  <h3>Overview</h3>
-                              </div>
-                          </div> <!-- end section-header -->
 
-                        <p style = "font-size: 1.5em"> Since the 1970s, regulations have been put in place to help govern the collection, use and distribution of consumers's personal information. <br>
 
-                          <br>More recently, these regulations have been focused on protecting the consumer by requiring companies to disclose what data they track and how it is used. <br>
+        <script>
 
-                          <!-- More recently, regulations are being put into place to protect consumers and increase the responsbilities of companies
-                          to share what they are tracking on a given consumer and, importantly, give them options on how that data is being used. -->
 
-                        <br>
-                        <div class="home-content__buttons">
-                            <p align = "center">
-                            <a href="./about_2/about_project.html" class="smoothscroll btn btn--stroke" style="color:#DEF2F1; width: 450px;
-                            border:  0.2rem solid #DEF2F1">
-                            LINK TO TIMELINE OF DATA REGULATIONS
-                            </a>
-                            </p>
-                        </div>
-                    </div>
+            function am4themes_myTheme(target) {
+              if (target instanceof am4core.ColorSet) {
+                target.list = [
+                  am4core.color("#5B8985"),
+                ];
+              }
+            }
 
-                    <div class="testimonials__slide">
+            am4core.useTheme(am4themes_myTheme);
 
-                        <div class="row section-header has-bottom-sep" data-aos="fade-up">
-                            <div class="col-full">
-                                <h3>General Data Project Regulation (GDPR)</h3>
-                            </div>
-                        </div> <!-- end section-header -->
+          // Create chart instance
+          var chart_3 = am4core.create("chartdiv-3", am4charts.XYChart);
 
-                        <p style = "font-size: 1.5em"> In April 2016, the European Union announced/adopted the General Data Project Regulation (GDPR) that set a new standard on how people can access information about them and placed limits on what organisations can do with personal data. These regulations apply to any organization that does business in the EU, regardless of where the organization is based. <br><br>
+          // Add data
+          chart_3.data = [{
+            "x": "1",
+            "y": 4,
+            "text": "[bold]1974[/]\nPrivacy Act of 1974",
+            "center": "bottom"
+          }, {
+            "x": "2",
+            "y": 4,
+            "text": "[bold]1977[/]\nPrivacy Commission Report",
+            "center": "bottom"
+          }, {
+            "x": "3",
+            "y": 4,
+            "text": "[bold]1986[/]\nTCPA and National Do Not Call Registry",
+            "center": "bottom"
+          }, {
+            "x": "3",
+            "y": 3,
+            "text": "[bold]1991[/]\nCommon Rule Human Subject Research Privacy",
+            "center": "top"
+          }, {
+            "x": "2",
+            "y": 3,
+            "text": "[bold]1995[/]\nEU Data Protection Directive",
+            "center": "bottom"
+          }, {
+            "x": "1",
+            "y": 3,
+            "text": "[bold]1996[/]\nHIPAA Health and Medical Privacy",
+            "center": "bottom"
+          }, {
+            "x": "1",
+            "y": 2,
+            "text": "[bold]1999[/]\nGramm Leach Bliley Act",
+            "center": "top"
+          }, {
+            "x": "2",
+            "y": 2,
+            "text": "[bold]2003[/]\nState Data Breach Notification Laws",
+            "center": "top"
+          }, {
+            "x": "3",
+            "y": 2,
+            "text": "[bold]2012[/]\nEU Right to be Forgotten",
+            "center": "top"
+          }, {
+            "x": "3",
+            "y": 1,
+            "text": "[bold]2018[/]\nGDPR",
+            "center": "top"
+          }, {
+            "x": "2",
+            "y": 1,
+            "text": "[bold]2020[/]\nCCPA",
+            "center": "top"
+          }, {
+            "x": "1",
+            "y": 1,
+            "text": "[bold]2021[/]\nCDPA",
+            "center": "top"
+          }
 
-                        Announced in April 2016, GDPR was not strictly enforced until May 2018, giving impacted organizations time to implement these new rules and update their privacy policies.
-                    </div>
 
-                  <div class="testimonials__slide">
 
-                      <div class="row section-header has-bottom-sep" data-aos="fade-up">
-                          <div class="col-full">
-                              <h3>GDPR Regulations</h3>
-                          </div>
-                      </div> <!-- end section-header -->
-                      <p style = "font-size: 1.5em"> For example, under GDPR, organizations are required to:
+          ];
 
-                      <ul>
-                        <li>Notify customers of data breaches involving personal data</li>
-                        <li>Provide customers access to view the data collected on them</li>
-                        <li>Request constomers' consent on how their data is collected and used</li>
-                        <li>Grant customers the right to delete their personal data</li>
-                      </ul>
-                    </div>
+          // Create axes
+          var xAxis = chart_3.xAxes.push(new am4charts.CategoryAxis());
+          xAxis.dataFields.category = "x";
+          xAxis.renderer.grid.template.disabled = true;
+          xAxis.renderer.labels.template.disabled = true;
+          xAxis.tooltip.disabled = true;
+          xAxis.data = [{
+            "x": "1"
+          }, {
+            "x": "2"
+          }, {
+            "x": "3"
+          }];
 
-                  </div><!-- end testimonials -->
-                </section> <!-- end s-about -->
+          var yAxis = chart_3.yAxes.push(new am4charts.ValueAxis());
+          yAxis.min = 0;
+          yAxis.max = 5;
+          yAxis.strictMinMax = true;
+          yAxis.renderer.grid.template.disabled = true;
+          yAxis.renderer.labels.template.disabled = true;
+          yAxis.renderer.baseGrid.disabled = true;
+          yAxis.tooltip.disabled = true;
+
+
+          // Create series
+          var series = chart_3.series.push(new am4charts.LineSeries());
+          series.dataFields.categoryX = "x";
+          series.dataFields.valueY = "y";
+          series.strokeWidth = 4;
+          series.sequencedInterpolation = true;
+          series.tensionX = 0.7;
+
+          var bullet = series.bullets.push(new am4charts.CircleBullet());
+          bullet.circle.radius = 10;
+
+          bullet.setStateOnChildren = true;
+          bullet.states.create("hover");
+          bullet.circle.states.create("hover").properties.radius = 15;
+
+          var labelBullet = series.bullets.push(new am4charts.LabelBullet());
+          labelBullet.label.text = "{text}";
+          labelBullet.label.maxWidth = 250;
+          labelBullet.label.wrap = true;
+          labelBullet.label.truncate = false;
+          labelBullet.label.textAlign = "middle";
+          labelBullet.label.padding(20, 20, 20, 20)
+          labelBullet.label.fill = am4core.color("#FFF");
+          labelBullet.label.background.fill = series.fill;
+          labelBullet.label.background.fillOpacity = 0.1;
+
+          labelBullet.setStateOnChildren = true;
+          labelBullet.states.create("hover").properties.scale = 1.2;
+          labelBullet.label.states.create("hover").properties.fill = am4core.color("#000");
+
+          labelBullet.label.propertyFields.verticalCenter = "center";
+
+
+            </script>
+
+              <div class="row section-header has-bottom-sep" >
+
+            <h1 style = "color: #FFFFFF">General Data Protection Regulation (GDPR)</h1>
+              
+                <p style = "font-size: 1.5em; color : #FFFFFF">The General Data Protection Regulation (EU) 2016/679 (GDPR) is a regulation in EU law on data protection and privacy in the European Union (EU) and the European Economic Area (EEA). It also addresses the transfer of personal data outside the EU and EEA areas. The GDPR's primary aim is to give individuals control over their personal data and to simplify the regulatory environment for international business by unifying the regulation within the EU. </br></p>
+          
+          </div>
+
+    </div><!-- end testimonials -->
+  </section> <!-- end s-about -->
 
 
 <!-- ******************************************************************************** -->
 <!-- ******************************************************************************** -->
 <!-- ******************************** privacy_xploer_analysis ******************************************* -->
-
-
-    <section id='privacy_xploer_analysis' class="s-about" style = "background: #FFFFFF">
-
-        <div class="row section-header has-bottom-sep" data-aos="fade-up">
-            <div class="col-full">
-                <h1 style = "color: #111111">Privacy Xplorer's Analysis</h1>
-            </div>
-
-        <div class="row clients-testimonials has-bottom-sep">
-            <div class="col-full">
-                <div class="testimonials">
-
-                    <div class="testimonials__slide">
-
-                        <!-- <div class="row section-header has-bottom-sep" data-aos="fade-up">
-                            <div class="col-full">
-                                <h3>Explain a policy</h3>
-                            </div>
-                        </div>  -->
-                        <!-- end section-header -->
-
-                        <p style = "font-size: 1.5em">Privacy Xplorer brings to light the impact of the General Data Project Regulation (GDPR) since its announcement in May 2016.<br><br>
-
-                        By leveraging historical snapshots of over 100,000 companies' privacy policies, Privacy Xplorer provides a longitudinal analysis on how a company's data policies have changed over time.
-                    </div>
-
-                    <div class="testimonials__slide">
-                      <div class="row section-header has-bottom-sep" data-aos="fade-up">
-                          <div class="col-full">
-                              <h3>The Focus</h3>
-                          </div>
-                      </div>
-                      <!-- end section-header -->
-
-                        <p style = "font-size: 1.5em">
-
-                          We wanted to address this with a <b> longitudinal </b> analysis to allow users to understand how a company's privacy policy has changed over time. </br></br>
-
-                          Leveraging our historical view helps to show which companies were leaders in this space and which were laggers.<br>
-                          <br>
-                          We focused on 3 important attributes related to GDPR alignment: users right to <b>edit</b>, users right to <b>access</b>, and users right to <b>delete</b> their
-                          personal data a digital company may collect on them.
-                    </div>
-
-                    <div class="testimonials__slide">
-
-                        <div class="row section-header has-bottom-sep" data-aos="fade-up">
-                            <div class="col-full">
-                                <h3>The Data</h3>
-                            </div>
-                        </div> <!-- end section-header -->
-                        <p style = "font-size: 1.5em">We leveraged the Princeton-Leuven Longitudinal Corpus of Privacy Policies which included over 1 million snapshots from more than 130,000 websites across two decades.
-                          <br><br>
-                        Privacy Xplorer is intended to be used by regulators and researchers to understand how companies are responding to GDPR regulations. These parties can use the visualizations below
-                        to garner insights on when companies update their policies, how long it takes a given
-                        </p>
-
-
-                        <div class="home-content__buttons">
-                            <p align = "center">
-                              <a href="../about_2/about_project.html"  class="btn btn--stroke" style="color:#DEF2F1; width: 450px;
-                              border:  0.2rem solid #DEF2F1">
-                            Link to Data
-                              </a>
-                            </p>
-                        </div>
-                    </div>
-
-                </div><!-- end testimonials -->
-
-
-    </section> <!-- end s-about -->
-
-
-<!-- ******************************************************************************** -->
-<!-- ******************************************************************************** -->
-<!-- *********************************  numbers that tick up ***************************************** -->
 
 
     <section id='intro_data' class="s-services">
@@ -386,15 +346,31 @@
 <!-- ******************************************************************************** -->
 <!-- *********************************  high level % chart ***************************************** -->
 
+</br></br>
+<h1 class="display-2">An intial look at Privacy Xplorer results</h1>
 
-<h1 class="display-2">Changes in Privacy Policies over the last 20 years</h1>
+<p style = "font-size: 1.5em"> Privacy policies were parsed to identify if they included the rights for users to view (access), edit or delete their data.</br>  Read more on our natural language processing approach here. </p></br>
+
+
 <div id="chartdiv"></div>
 <script>
 
 
-// Themes begin
-am4core.useTheme(am4themes_animated);
-// Themes end
+function am4themes_myTheme(target) {
+  if (target instanceof am4core.ColorSet) {
+    target.list = [
+      am4core.color("#5B8985"),
+      am4core.color("#83c5be"),
+      am4core.color("#CDE7E5"),
+      am4core.color("#E29578"),
+      am4core.color("#E29578"),
+    ];
+  }
+}
+
+am4core.useTheme(am4themes_myTheme);
+
+
 
 var chart = am4core.create("chartdiv", am4charts.XYChart);
 
@@ -445,9 +421,9 @@ series.tooltip.background.fill = am4core.color("#FFF");
 series.tooltip.getStrokeFromObject = true;
 series.tooltip.background.strokeWidth = 3;
 series.tooltip.getFillFromObject = false;
-series.fillOpacity = 0.6;
+series.fillOpacity = 0.4;
 series.strokeWidth = 2;
-series.stacked = true;
+series.stacked = false;
 
 var series2 = chart.series.push(new am4charts.LineSeries());
 series2.name = "% Edit";
@@ -459,8 +435,8 @@ series2.tooltip.getFillFromObject = false;
 series2.tooltip.getStrokeFromObject = true;
 series2.tooltip.background.strokeWidth = 3;
 series2.sequencedInterpolation = true;
-series2.fillOpacity = 0.6;
-series2.stacked = true;
+series2.fillOpacity = 0.4;
+series2.stacked = false;
 series2.strokeWidth = 2;
 
 var series3 = chart.series.push(new am4charts.LineSeries());
@@ -473,9 +449,9 @@ series3.tooltip.getFillFromObject = false;
 series3.tooltip.getStrokeFromObject = true;
 series3.tooltip.background.strokeWidth = 3;
 series3.sequencedInterpolation = true;
-series3.fillOpacity = 0.6;
+series3.fillOpacity = 0.4;
 series3.defaultState.transitionDuration = 1000;
-series3.stacked = true;
+series3.stacked = false;
 series3.strokeWidth = 2;
 
 chart.cursor = new am4charts.XYCursor();
@@ -486,12 +462,19 @@ chart.scrollbarX = new am4core.Scrollbar();
 chart.legend = new am4charts.Legend();
 chart.legend.position = "top";
 
+// Add chart title
+var title = chart.titles.create();
+title.text = "Privacy policy changes over the last 20 years";
+title.fontSize = 25;
+title.marginBottom = 30;
+
+
 // axis ranges
 var range = dateAxis.axisRanges.create();
 range.date = new Date(2016, 0, 1);
 range.endDate = new Date(2018, 0, 1);
 range.axisFill.fill = chart.colors.getIndex(4);
-range.axisFill.fillOpacity = 0.2;
+range.axisFill.fillOpacity = 0.5;
 
 range.label.text = "Announcement of GDPR";
 range.label.inside = true;
@@ -505,13 +488,14 @@ var range2 = dateAxis.axisRanges.create();
 range2.date = new Date(2018, 0, 1);
 range2.endDate = new Date(2019, 12, 1);
 range2.axisFill.fill = chart.colors.getIndex(4);
-range2.axisFill.fillOpacity = 0.4;
+range2.axisFill.fillOpacity = 0.8;
 
 range2.label.text = "Enforcement of GDPR";
 range2.label.inside = true;
 range2.label.rotation = 90;
 range2.label.horizontalCenter = "right";
 range2.label.verticalCenter = "bottom";
+
 
 </script>
 </div>
@@ -524,16 +508,24 @@ range2.label.verticalCenter = "bottom";
 
           <div class="row section-header has-bottom-sep" data-aos="fade-up">
 
-<h1 class="display-2">2019: Privacy Policy Feature Adoption by Business</h1></br>
 <div id="chartdiv-2"></div>
 
 <script>
 
 
+function am4themes_myTheme(target) {
+  if (target instanceof am4core.ColorSet) {
+    target.list = [
+      am4core.color("#006D77"),
+      am4core.color("#83C5BE"),
+      am4core.color("#EDF6F9"),
+      am4core.color("#E29578"),
+      am4core.color("#E29578"),
+    ];
+  }
+}
 
-// Themes begin
-am4core.useTheme(am4themes_animated);
-// Themes end
+am4core.useTheme(am4themes_myTheme);
 
 var chart2 = am4core.create("chartdiv-2", am4charts.RadarChart);
 chart2.hiddenState.properties.opacity = 0; // this creates initial fade-in
@@ -602,6 +594,14 @@ series3.stacked = true;
 // Add a legend
 chart2.legend = new am4charts.Legend();
 chart2.legend.position = "top";
+
+
+// Add chart title
+var title = chart2.titles.create();
+title.text = "Adoption of privacy rights by industry";
+title.fontSize = 25;
+title.marginBottom = 30;
+
 
 chart2.seriesContainer.zIndex = -1;
 
@@ -707,9 +707,9 @@ slider.events.on("rangechanged", function() {
                 <script type='text/javascript'>
                 var divElement = document.getElementById('viz1615764633961');
                 var vizElement = divElement.getElementsByTagName('object')[0];
-                if ( divElement.offsetWidth > 800 )
+                if ( divElement.offsetWidth > 1200 )
                     { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';}
-                else if ( divElement.offsetWidth > 500 )
+                else if ( divElement.offsetWidth > 800 )
                     { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';}
                 else { vizElement.style.width='100%';vizElement.style.height='1627px';}
                 var scriptElement = document.createElement('script');

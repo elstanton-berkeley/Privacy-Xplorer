@@ -97,9 +97,7 @@
 <!-- ******************************************************************************** -->
 <!-- ***************************** home *********************************************** -->
 
-    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/updatedbackground.png" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
-
-
+    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/landingpage.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
 
         <div class="home-content">
 
@@ -200,6 +198,7 @@
             "x": "1",
             "y": 4,
             "text": "[bold]1974[/]\nPrivacy Act of 1974",
+            "description": "This is the longer description of this...",
             "center": "bottom"
           }, {
             "x": "2",
@@ -267,7 +266,7 @@
           xAxis.dataFields.category = "x";
           xAxis.renderer.grid.template.disabled = true;
           xAxis.renderer.labels.template.disabled = true;
-          xAxis.tooltip.disabled = true;
+          xAxis.tooltip.disabled = false;
           xAxis.data = [{
             "x": "1"
           }, {
@@ -283,8 +282,7 @@
           yAxis.renderer.grid.template.disabled = true;
           yAxis.renderer.labels.template.disabled = true;
           yAxis.renderer.baseGrid.disabled = true;
-          yAxis.tooltip.disabled = true;
-
+          yAxis.tooltip.disabled = false;
 
           // Create series
           var series = chart_3.series.push(new am4charts.LineSeries());

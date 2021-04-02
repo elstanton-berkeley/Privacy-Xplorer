@@ -105,10 +105,9 @@
 
                 <h1>Welcome to Privacy Xplorer</h1>
 
-                <h3 style="font-size: 2.8rem;">
-                        Privacy Xplorer provides regulators and researchers a platform to quickly view and analyze the impact of data privacy regulations, primarily GDPR, on privacy policies  over time.  </br></br>
-
-                        Leveraging modern natural language processing techniques, we parsed privacy details from over 1mm policies covering 130,000 websites globally.
+                <h3 style="font-size: 2rem;">
+                  </br></br>
+                        A platform for regulators and researchers to quickly analyze the impact of recent data privacy regulations on companies' privacy policies over time.  </br></br>
                 </h3>
 
 
@@ -165,12 +164,12 @@
           <div class="row section-header has-bottom-sep" data-aos="fade-up">
 
             <h1 style = "color: #FFFFFF">What Are Data Privacy Regulations?</h1>
-              
+
                 <p style = "font-size: 1.5em; color : #FFFFFF"> Since the 1970s, regulations have been put in place to help govern the collection, use and distribution of consumers's personal information. </br>
 
                   <br>More recently, these regulations have been focused on protecting the consumer by requiring companies to disclose what data they track and how it is used. </br></p>
-          
-          
+
+
           <h1 style = "color: #FFFFFF">Privacy Policy Timelines </h1>
           </div>
           <div id="chartdiv-3"></div>
@@ -243,17 +242,17 @@
           }, {
             "x": "3",
             "y": 1,
-            "text": "[bold]2018[/]\nGDPR",
+            "text": "[bold]2018[/]\nGeneral Data\nProjection Regulation\n(GDPR)",
             "center": "top"
           }, {
             "x": "2",
             "y": 1,
-            "text": "[bold]2020[/]\nCCPA",
+            "text": "[bold]2020[/]\nCalifornia Consumer Privacy Act\n(CCPA)",
             "center": "top"
           }, {
             "x": "1",
             "y": 1,
-            "text": "[bold]2021[/]\nCDPA",
+            "text": "[bold]2021[/]\nConsumer Data\nProtection Act\n(CDPA)",
             "center": "top"
           }
 
@@ -322,14 +321,43 @@
               <div class="row section-header has-bottom-sep" >
 
             <h1 style = "color: #FFFFFF">General Data Protection Regulation (GDPR)</h1>
-              
-                <p style = "font-size: 1.5em; color : #FFFFFF">The General Data Protection Regulation (EU) 2016/679 (GDPR) is a regulation in EU law on data protection and privacy in the European Union (EU) and the European Economic Area (EEA). It also addresses the transfer of personal data outside the EU and EEA areas. The GDPR's primary aim is to give individuals control over their personal data and to simplify the regulatory environment for international business by unifying the regulation within the EU. </br></p>
-          
+
+                <p style = "font-size: 1.5em; color : #FFFFFF">Adopted in April 2016 and enforced in May 2018, the General Data Protection Regulation (GDPR) is a major overhaul of data protection and privacy affecting companies that operate in Europe. GDPR aims to give individuals greater transparency and control over the collection and use of their personal data.
+                <br></br>
+                GDPR increased users’ rights over their personal data by requiring that companies provide users with the ability to <strong>access, edit and request deletion</strong> of their personal data. In addition, GDPR expanded the definition of personal data to include <strong>cookies</strong>, and as such companies are required to provide users with information on the collection and option to disable cookies.</p>
+
+
           </div>
 
     </div><!-- end testimonials -->
   </section> <!-- end s-about -->
 
+
+<!-- ******************************************************************************** -->
+<!-- ******************************************************************************** -->
+<!-- ******************************** what_is_privacy_xplorer ******************************************* -->
+
+
+  <section id='what_is_privacy_xplorer' class="s-about" style = "background: #FFFFFF">
+    <div class="row section-header has-bottom-sep" data-aos="fade-up">
+
+      </br></br>
+      <h1 class="display-2">What is Privacy Xplorer?</h1>
+
+      <p style = "font-size: 1.5em">Privacy Xplorer enables regulators to analyze how companies have responded to these new mandates on user rights and user control. Specifically:</p>
+
+        <ul>
+          <li><strong>Delete</strong> Whether a company allows users to request full deletion of their personal data</li>
+          <li><strong>View</strong>: Whether a company allows users to request a copy of their personal data</li>
+          <li><strong>Edit</strong>: Whether a company allows users to modify their personal data</li>
+          <li><strong>Cookies</strong>: Whether a company discloses to users how to disable cookies</li>
+        </ul>
+
+          We provide a platform that examines adoption of these practices across industries, regions and company sizes.
+      </p> Read more on our natural language processing approach here. </p>
+
+
+  </section> <!-- end s-about -->
 
 <!-- ******************************************************************************** -->
 <!-- ******************************************************************************** -->
@@ -346,7 +374,7 @@
 
 </br></br>
 <h1 class="display-2">An intial look at Privacy Xplorer results</h1>
-
+<!-- class="col-full" -->
 <p style = "font-size: 1.5em"> Privacy policies were parsed to identify if they included the rights for users to view (access), edit or delete their data.</br>  Read more on our natural language processing approach here. </p></br>
 
 
@@ -583,7 +611,7 @@ series2.stacked = true;
 
 var series3 = chart2.series.push(new am4charts.RadarColumnSeries());
 series3.columns.template.radarColumn.strokeOpacity = 1;
-series3.columns.template.tooltipText = "{name}: {valueY.value}";  
+series3.columns.template.tooltipText = "{name}: {valueY.value}";
 series3.name = "% Delete";
 series3.dataFields.categoryX = "category";
 series3.dataFields.valueY = "value3";
@@ -945,14 +973,16 @@ slider.events.on("rangechanged", function() {
             <div class="col-six tab-full left footer-desc">
 
                 <h3 class="subhead">Privacy Xplorer</h3>
-                Proin eget tortor risus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Nulla porttitor accumsan tincidunt. Nulla porttitor accumsan tincidunt. Quaerat voluptas autem necessitatibus vitae aut.
+                Privacy Xplorer provides regulators and researchers a platform to quickly view and analyze the impact of recent data privacy regulations on over 130,000 companies' privacy policies over time.  </br></br>
+
+                By leveraging modern natural language processing techniques, we were able to classify a user's ability to edit, access or delete their data in over one million privacy policies to create a dataset that is the foundation of our analysis.
 
             </div>
 
             <div class="col-six tab-full right footer-subscribe">
 
                 <h4>This was fun!</h4>
-                <p>Quia quo qui sed odit. Quaerat voluptas autem necessitatibus vitae aut non alias sed quia. Ut itaque enim optio ut excepturi deserunt iusto porro.</p>
+                <p></p>
 
 
             </div>

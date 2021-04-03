@@ -553,7 +553,7 @@ form,
 }
 
 .line-scale-pulse-out > div {
-    background-color: #3AAFA9;
+    background-color: #83C5BE;
     width: 4px;
     height: 35px;
     border-radius: 2px;
@@ -1479,7 +1479,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
  * ## main navigation
  * ------------------------------------------------------------------- */
 .header-nav {
-    background: #0C0C0C;
+    background: #E29578;
     color: rgba(255, 255, 255, 0.25);
     font-family: "montserrat-light", sans-serif;
     font-size: 1.3rem;
@@ -1516,18 +1516,19 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 .header-nav h3 {
     font-family: "montserrat-semibold", sans-serif;
-    font-size: 11px;
+    font-size: 18px;
     line-height: 1.5;
     text-transform: uppercase;
     letter-spacing: .25rem;
     margin-bottom: 4.8rem;
     margin-top: .9rem;
-    color: #3AAFA9;
+    color: #006d77;
 }
 
 .header-nav p {
     margin-bottom: 2.7rem;
-    color: #3AAFA9;
+    color: #006d77;
+    font-size: 13px;
 }
 
 .header-nav b {
@@ -1671,11 +1672,11 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .header-menu-toggle.opaque {
-    background-color: #000000;
+    background-color: #006D77;
 }
 
 .header-menu-toggle.opaque .header-menu-text {
-    background-color: #000000;
+    background-color: #006D77;
 }
 
 .header-menu-toggle:hover, .header-menu-toggle:focus {
@@ -1760,6 +1761,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     min-height: 786px;
     position: relative;
     display: table;
+    background-color: #83C5BE;
 }
 
 .s-home .shadow-overlay {
@@ -3363,7 +3365,7 @@ footer {
     line-height: 2;
     text-align: center;
     color: rgba(255, 255, 255, 0.3);
-    background: #111111
+    background: #006D77
 }
 
 footer h4 {
@@ -3532,7 +3534,7 @@ footer .row {
     width: 60px;
     line-height: 60px;
     text-align: center;
-    background: black;
+    background: #006D77;
     color: rgba(255, 255, 255, 0.5);
     text-align: center;
     text-transform: uppercase;
@@ -3648,5 +3650,10 @@ footer .row {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  height: 1000px;
+  height: 600px;
+}
+
+.column {
+  float: left;
+  width: 50%;
 }

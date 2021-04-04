@@ -523,7 +523,7 @@ label.exportable = false;
 
 chart2.data = [
 { category: "adult", Number_of_View: 35.0795135640786, Number_of_Edit: 39.1955098222638, Number_of_Delete: 45.6501403180543},
-{ category: "blogsandpersonal", Number_of_View: 20.9090909090909, Number_of_Edit: 13.6363636363636, Number_of_Delete: 40},
+{ category: "blogs", Number_of_View: 20.9090909090909, Number_of_Edit: 13.6363636363636, Number_of_Delete: 40},
 { category: "business", Number_of_View: 41.6570982409406, Number_of_Edit: 36.7749046984798, Number_of_Delete: 47.2006613695862},
 { category: "economyandfinance", Number_of_View: 45.6989247311828, Number_of_Edit: 37.6344086021505, Number_of_Delete: 37.6344086021505},
 { category: "education", Number_of_View: 35.1249053747161, Number_of_Edit: 29.4663133989402, Number_of_Delete: 35.7872823618471},
@@ -551,6 +551,7 @@ categoryAxis.renderer.labels.template.location = 0.5;
 categoryAxis.renderer.grid.template.strokeOpacity = 0.1;
 categoryAxis.renderer.axisFills.template.disabled = true;
 categoryAxis.mouseEnabled = false;
+categoryAxis.renderer.labels.template.fontSize = 12;
 
 var valueAxis = chart2.yAxes.push(new am4charts.ValueAxis());
 valueAxis.tooltip.disabled = true;
@@ -559,6 +560,7 @@ valueAxis.renderer.axisFills.template.disabled = true;
 valueAxis.renderer.axisAngle = 260;
 valueAxis.renderer.labels.template.horizontalCenter = "right";
 valueAxis.min = 0;
+
 
 var series1 = chart2.series.push(new am4charts.RadarColumnSeries());
 series1.columns.template.radarColumn.strokeOpacity = 1;
@@ -596,6 +598,7 @@ var title = chart2.titles.create();
 title.text = "2019: Adoption of privacy rights by industry, leaders and laggers";
 title.fontSize = 25;
 title.marginBottom = 30;
+title.color = "#006D77"
 
 
 chart2.seriesContainer.zIndex = -1;
@@ -606,8 +609,8 @@ slider.exportable = false;
 slider.events.on("rangechanged", function() {
   var start = slider.start;
 
-  chart2.startAngle = 270 - start * 116 - 1;
-  chart2.endAngle = 270 + start * 116 + 1;
+  chart2.startAngle = 270 - start * 96 - 1;
+  chart2.endAngle = 270 + start * 96 + 1;
 
   valueAxis.renderer.axisAngle = chart2.startAngle;
 });

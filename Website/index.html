@@ -33,6 +33,8 @@
     <script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
     <script src="https://cdn.amcharts.com/lib/4/plugins/timeline.js"></script>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <!-- favicons
     ================================================== -->
     <link rel="shortcut icon" href="" type="image/x-icon">
@@ -65,7 +67,7 @@
                     <li class="current"><a class="smoothscroll"  href="#home" title="home">Home</a></li>
                     <li><a class="smoothscroll"  href="#what_is_a_policy" title="services">Policy Intro</a></li>
                     <li><a class="smoothscroll"  href="#intro_data" title="works">Introduction to Data</a></li>
-                    <li><a class="smoothscroll"  href="#intro_data" title="works">Model Overview</a></li>
+                    <li><a class="smoothscroll"  href="#intro_model" title="works">Model Overview</a></li>
                     <li><a class="smoothscroll"  href="#data_explorer" title="clients">Data Explorer Options</a></li>
                     <li><a class="smoothscroll"  href="#contact" title="contact">Contact</a></li>
                 </ul>
@@ -99,8 +101,8 @@
 
     <section id="home" class="s-home target-section" data-parallax="scroll"  data-natural-width=3000 data-natural-height=2000 data-position-y=right>
 
-       
-       
+
+
 
         <div class="home-content">
 
@@ -109,7 +111,7 @@
                 <h1>Welcome to Privacy Xplorer</h1>
               <div class="row" >
                 <div class="column">
-  
+
                     <h3>
                       </br></br>
                           Privacy Xplorer enables regulators to analyze the impact of GDPR by tracking the progression of user data rights, within company privacy policies, over time. Until now, research on GDPR adoption has been static and smaller scale.  </br></br>
@@ -117,10 +119,10 @@
                           Our analysis on GDPR adoption is 150 times the size of prior work and the first longitudinal analysis of GDPR adoption.  Read more on our natural language processing approach and model results here.</br></br>
                     </h3>
                 </div>
-              
+
                 <div class="column">
                   <img src='images/regulator image.png'>
-                
+
 
                 <div class="home-content__buttons" style='margin-left: 100px;'>
                     <a href="#what_is_a_policy" class="smoothscroll btn btn--stroke">
@@ -327,14 +329,89 @@
 <!-- ******************************************************************************** -->
 <!-- ******************************** privacy_xploer_analysis ******************************************* -->
 
-
     <section id='intro_data' class="s-services">
           <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="row">
+              <h1 style="color: #006D77">The Data</h1>
+              <div class="column" style="padding-right: 10px;">
+                <h1 style="color : #006D77; text-align: center;">Online Privacy Policies</h1>
+                <h3 style="margin-top: 1rem" class="subhead" >Training Data</h3>
+                <p  style = "font-size: 1.5em; color : #006D77; text-align: center;">
+                  The Online Privacy Policies (Opp-115) corpus is a collection of 115 website privacy policies labeled by law students to specify specific data practices within the policy.
+                </p>
+                <div class="home-content__buttons">
+                    <a href="https://www.usableprivacy.org/data" class="smoothscroll btn btn--stroke">
+                        Link to Opp-115 Website
+                    </a>
+                </div>
+              </div>
+
+              <div class="column" style="padding-left: 10px;">
+                <h1 style="color : #006D77; text-align: center;">Princeton-Leuven</h1>
+                <h3 style="margin-top: 1rem" class="subhead">Testing Data</h3>
+                <p  style = "font-size: 1.5em; color : #006D77; text-align: center;">
+                The Princeton-Leuven Longitudinal Corpus of Privacy Policies is a non-labeled dataset of 910,000 privacy policy snapshots from 130,000 websites, spanning over two decades.
+              </p>
+              <div class="home-content__buttons">
+                  <a href="https://privacypolicies.cs.princeton.edu/" class="smoothscroll btn btn--stroke">
+                      Link to Princeton-Leuven Website
+                  </a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- ******************************************************************************** -->
+    <!-- ******************************************************************************** -->
+    <!-- ******************************** intro_model ******************************************* -->
 
 
+    <section id='intro_model' class="s-about">
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+
+          <h1 style = "color: #FFFFFF">The Models</h1>
+
+              <p style = "font-size: 1.5em; color : #FFFFFF; text-align: left;">Privacy Xplorer utilizes a two-step, semi-supervised classification model</br></p>
+          <br></br>
+          <!-- <h1 style = "color: #FFFFFF">Regulations Timeline</h1> -->
+
+          <div id="cf7" class="shadow">
+            <img class='opaque' src="images/data_model/2-step_v2.JPG" />
+            <img src="images/data_model/Second_pressie_2.png" />
+            <img src="images/data_model/Second_pressie_2.png" />
+            <img src="images/data_model/Second_pressie_4.png" />
+          </div>
+          <div>
+            <p id="cf7_controls">
+              <span class="selected">Training</span>
+              <span>Testing: Step 1</span>
+              <span>Testing: Step 2</span>
+              <span>Testing: Semi-Supervised</span>
+            </p>
+          </div>
+        </div>
+
+        <script>
+          $(document).ready(function() {
+            $("#cf7_controls").on('click', 'span', function() {
+              $("#cf7 img").removeClass("opaque");
+
+              var newImage = $(this).index();
+
+              $("#cf7 img").eq(newImage).addClass("opaque");
+
+              $("#cf7_controls span").removeClass("selected");
+              $(this).addClass("selected");
+            });
+            });
+        </script>
+    </section>
 <!-- ******************************************************************************** -->
 <!-- ******************************************************************************** -->
 <!-- *********************************  high level % chart ***************************************** -->
+<section id='data_explorer' class="s-services">
+      <div class="row section-header has-bottom-sep" data-aos="fade-up">
 
 </br></br>
 <img src='images/sectionintro.png'> </br></br>
@@ -947,7 +1024,7 @@ slider.events.on("rangechanged", function() {
                 <h3 class="subhead">Privacy Xplorer</h3>
                 <p>Privacy Xplorer provides regulators and researchers a platform to quickly view and analyze the impact of recent data privacy regulations on over 130,000 companies' privacy policies over time. </br></br>
 
-                By leveraging modern natural language processing techniques, we were able to classify a user's ability to edit, access or delete their data in over one million privacy policies to create a dataset that is the foundation of our analysis.</p> 
+                By leveraging modern natural language processing techniques, we were able to classify a user's ability to edit, access or delete their data in over one million privacy policies to create a dataset that is the foundation of our analysis.</p>
 
             </div>
 

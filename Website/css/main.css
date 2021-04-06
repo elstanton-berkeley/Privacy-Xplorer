@@ -3668,13 +3668,15 @@ footer .row {
 }
 #cf7_controls span {
   padding-right:2em;
+  /* border: 1px solid black; */
   cursor:pointer;
 }
 #cf7 {
   position:relative;
-  max-width: 100%;
+  /* max-width:
+   100%; */
   height: 400px;
-  /* width:600px; */
+  width:600px;
   margin:0 auto 10px;
 }
 #cf7 img {

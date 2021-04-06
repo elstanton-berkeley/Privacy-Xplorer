@@ -340,7 +340,7 @@
                   The Online Privacy Policies (Opp-115) corpus is a collection of 115 website privacy policies labeled by law students to specify specific data practices within the policy.
                 </p>
                 <div class="home-content__buttons">
-                    <a href="https://www.usableprivacy.org/data" class="smoothscroll btn btn--stroke">
+                    <a href="https://www.usableprivacy.org/data" class="smoothscroll btn btn--stroke" style="width: auto;">
                         Link to Opp-115 Website
                     </a>
                 </div>
@@ -353,7 +353,7 @@
                 The Princeton-Leuven Longitudinal Corpus of Privacy Policies is a non-labeled dataset of 910,000 privacy policy snapshots from 130,000 websites, spanning over two decades.
               </p>
               <div class="home-content__buttons">
-                  <a href="https://privacypolicies.cs.princeton.edu/" class="smoothscroll btn btn--stroke">
+                  <a href="https://privacypolicies.cs.princeton.edu/" class="smoothscroll btn btn--stroke" style="width: auto;">
                       Link to Princeton-Leuven Website
                   </a>
               </div>
@@ -370,10 +370,17 @@
     <section id='intro_model' class="s-about">
         <div class="row section-header has-bottom-sep" data-aos="fade-up">
 
-          <h1 style = "color: #FFFFFF">The Models</h1>
+          <h1 style = "color: #FFFFFF">Model Architecture</h1>
 
-              <p style = "font-size: 1.5em; color : #FFFFFF; text-align: left;">Privacy Xplorer utilizes a two-step, semi-supervised classification model</br></p>
-          <br></br>
+              <p style = "font-size: 1.5em; color : #FFFFFF; text-align: left;">Privacy Xplorer utilizes a two-step, semi-supervised classification model, consisting of five fine-tuned LegalBERT models.
+              <br></br>
+              These models were initially trained using the Online Privacy Policies (Opp-115) corpus. Due to the size of the dataset, semi-supervised techniques were later applied to increase the size of the traing data, which in turned drastically improved the accuracy of the models.
+            </p>
+            <p style = "font-size: 1em; color : #006D77; text-align: center;">Click on the buttons below for more details on Privacy Xplorer's LegalBERT model architecture.</p>
+
+
+
+
           <!-- <h1 style = "color: #FFFFFF">Regulations Timeline</h1> -->
 
           <div id="cf7" class="shadow">
@@ -382,7 +389,7 @@
             <img src="images/data_model/Second_pressie_2.png" />
             <img src="images/data_model/Second_pressie_4.png" />
           </div>
-          <div>
+          <div >
             <p id="cf7_controls">
               <span class="selected">Training</span>
               <span>Testing: Step 1</span>

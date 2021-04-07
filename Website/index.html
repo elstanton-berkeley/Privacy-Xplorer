@@ -372,31 +372,79 @@
 
           <h1 style = "color: #FFFFFF">Model Architecture</h1>
 
-              <p style = "font-size: 1.5em; color : #FFFFFF; text-align: left;">Privacy Xplorer utilizes a two-step, semi-supervised classification model, consisting of five fine-tuned LegalBERT models.
+              <p style = "font-size: 1.5em; color : #FFFFFF; text-align: left;">Privacy Xplorer utilizes a two-step, semi-supervised classification model, consisting of six fine-tuned LegalBERT models.
               <br></br>
-              These models were initially trained using the Online Privacy Policies (Opp-115) corpus. Due to the size of the dataset, semi-supervised techniques were later applied to increase the size of the traing data, which in turned drastically improved the accuracy of the models.
+              These models were initially trained using the Online Privacy Policies (Opp-115) corpus. However, due to the size of the Opp-115 dataset, semi-supervised techniques were later applied to increase the size of the traing data, which in turned drastically improved the accuracy of the models.
             </p>
-            <p style = "font-size: 1em; color : #006D77; text-align: center;">Click on the buttons below for more details on Privacy Xplorer's LegalBERT model architecture.</p>
-
-
-
-
-          <!-- <h1 style = "color: #FFFFFF">Regulations Timeline</h1> -->
+            <p style = "font-size: 1em; color : #006D77; text-align: center;">Click on the buttons, below, to view Privacy Xplorer's LegalBERT model.</p>
 
           <div id="cf7" class="shadow">
-            <img class='opaque' src="images/data_model/2-step_v2.JPG" />
-            <img src="images/data_model/Second_pressie_2.png" />
-            <img src="images/data_model/Second_pressie_2.png" />
-            <img src="images/data_model/Second_pressie_4.png" />
+            <img class='opaque' src="images/data_model/step0_training.jpg" />
+            <img src="images/data_model/step1_category_model.jpg" />
+            <img src="images/data_model/step2_attribute_models.jpg" />
+            <img src="images/data_model/step3_semi_supervised.jpg" />
+            <img src="images/data_model/step4_retrain_model.jpg" />
+            <img src="images/data_model/step5_final_model.jpg" />
           </div>
           <div >
             <p id="cf7_controls">
               <span class="selected">Training</span>
               <span>Testing: Step 1</span>
               <span>Testing: Step 2</span>
-              <span>Testing: Semi-Supervised</span>
+              <span>Testing: Semi-Supervised Data</span>
+              <span>Testing: Retrain Model</span>
+              <span>Final Model</span>
             </p>
           </div>
+          <br>
+          <h1 style = "color: #FFFFFF">Model Results</h1>
+          <table id="results_table">
+            <tbody>
+              <tr style="height: 23px;">
+                <td style="height: 23px;"><strong>Model</strong></td>
+                <td style="height: 23px;"><strong>Precision</strong></td>
+                <td style="height: 23px;"><strong>Recall</strong></td>
+                <td style="height: 23px;"><strong>F1-Score</strong></td>
+              </tr>
+              <tr style="height: 23px;">
+                <td style="height: 23px;">User Edit, Access and Deletion Category</td>
+                <td style="height: 23px;">0.85</td>
+                <td style="height: 23px;">0.87</td>
+                <td style="height: 23px;">0.86</td>
+              </tr>
+              <tr style="height: 23px;">
+                <td style="height: 23px;">&nbsp;&nbsp;&nbsp;View Attribute</td>
+                <td style="height: 23px;">0.76</td>
+                <td style="height: 23px;">0.81</td>
+                <td style="height: 23px;">0.87</td>
+              </tr>
+              <tr style="height: 23px;">
+                <td style="height: 23px;">&nbsp;&nbsp;&nbsp;Edit Attribute</td>
+                <td style="height: 23px;">0.84</td>
+                <td style="height: 23px;">0.83</td>
+                <td style="height: 23px;">0.83</td>
+              </tr>
+              <tr style="height: 23px;">
+                <td style="height: 23px;">&nbsp;&nbsp;&nbsp;Delete Attribute</td>
+                <td style="height: 23px;">0.95</td>
+                <td style="height: 23px;">0.81</td>
+                <td style="height: 23px;">0.87</td>
+              </tr>
+              <tr style="height: 23px;">
+                <td style="height: 23px;">&nbsp;User Choice Category</td>
+                <td style="height: 23px;">0.82</td>
+                <td style="height: 23px;">0.82</td>
+                <td style="height: 23px;">0.82</td>
+              </tr>
+              <tr style="height: 23px;">
+                <td style="height: 23px;">&nbsp; &nbsp;&nbsp;Cookie Attribute</td>
+                <td style="height: 23px;">0.99</td>
+                <td style="height: 23px;">0.95</td>
+                <td style="height: 23px;">0.97</td>
+              </tr>
+            </tbody>
+          </table>
+
         </div>
 
         <script>
@@ -413,6 +461,7 @@
             });
             });
         </script>
+
     </section>
 <!-- ******************************************************************************** -->
 <!-- ******************************************************************************** -->

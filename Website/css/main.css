@@ -3709,3 +3709,12 @@ footer .row {
   /* font-weight: bold; */
 
 }
+
+
+
+
+div.myTableauViz {
+width: 950px;
+margin-left: auto ;
+margin-right: auto ;
+}

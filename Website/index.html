@@ -355,11 +355,12 @@
                 <p  style = "font-size: 1.5em; color : #006D77; text-align: center;">
                   The Online Privacy Policies (OPP-115) corpus is a collection of 115 website privacy policies labeled by law students to specify specific data practices within the policy.
                 </p>
-                <div class="home-content__buttons">
-                    <a href="https://www.usableprivacy.org/data" class="smoothscroll btn btn--stroke" style="width: auto;">
-                        Link to OPP-115 Website
-                    </a>
-                </div>
+
+                  <div class="home-content__buttons">
+                      <a href="https://www.usableprivacy.org/data" class="smoothscroll btn btn--stroke" style="width: 300px; text-align: center;">
+                        OPP-115 Data
+                      </a>
+                  </div>
               </div>
 
               <div class="column" style="padding-left: 10px;">
@@ -369,8 +370,8 @@
                 The Princeton-Leuven Longitudinal Corpus of Privacy Policies is an un-labeled dataset of 910,000 privacy policy snapshots from 130,000 websites, spanning over two decades.
               </p>
               <div class="home-content__buttons">
-                  <a href="https://privacypolicies.cs.princeton.edu/" class="smoothscroll btn btn--stroke" style="width: auto;">
-                      Link to Princeton-Leuven Website
+                  <a href="https://privacypolicies.cs.princeton.edu/" class="smoothscroll btn btn--stroke" style="width: 300px;">
+                      Princeton-Leuven Data
                   </a>
               </div>
             </div>
@@ -394,15 +395,18 @@
             </p>
             <p style = "font-size: 1em; color : #006D77; text-align: center;">Click on the buttons, below, to view Privacy Xplorer's LegalBERT model.</p>
 
-          <div id="cf7" class="shadow">
+          <div id="cf7" class="s-about" >
+
             <img class='opaque' src="images/data_model/step0_training.jpg"/>
-            <img src="images/data_model/step1_category_model.jpg" />
+            <img src="images/data_model/step1_category_model.jpg"  />
             <img src="images/data_model/step2_attribute_models.jpg" />
             <img src="images/data_model/step3_semi_supervised.jpg" />
             <img src="images/data_model/step4_retrain_model.jpg" />
             <img src="images/data_model/step5_final_model.jpg" />
+            </br></br>
           </div>
-          <div >
+
+          <div class="row section-header has-bottom-sep" data-aos="fade-up">
             <p id="cf7_controls">
               <span class="selected">Train Models</span>
               <span>Category Model</span>
@@ -413,6 +417,7 @@
             </p>
           </div>
           <br>
+
           <h1 style = "color: #FFFFFF">Model Results</h1>
           <table id="results_table">
             <tbody>

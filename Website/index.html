@@ -65,11 +65,12 @@
 
                 <ul class="header-nav__list">
                     <li class="current"><a class="smoothscroll"  href="#home" title="home">Home</a></li>
-                    <li><a class="smoothscroll"  href="#what_is_a_policy" title="services">Policy Intro</a></li>
-                    <li><a class="smoothscroll"  href="#intro_data" title="works">Introduction to Data</a></li>
-                    <li><a class="smoothscroll"  href="#intro_model" title="works">Model Overview</a></li>
-                    <li><a class="smoothscroll"  href="#data_explorer" title="clients">Data Explorer Options</a></li>
-                    <li><a class="smoothscroll"  href="#contact" title="contact">Contact</a></li>
+                    <li><a class="smoothscroll"  href="#what_is_a_policy" title="services">Privacy Policies</a></li>
+                    <li><a class="smoothscroll"  href="#what_is_a_regulation" title="services">Privacy Regulations</a></li>
+                    <li><a class="smoothscroll"  href="#intro_data" title="works">Our Data</a></li>
+                    <li><a class="smoothscroll"  href="#intro_model" title="works">Our Models</a></li>
+                    <li><a class="smoothscroll"  href="#data_explorer" title="clients">Initial Results</a></li>
+                    <li><a class="smoothscroll"  href="#data_explorer_charts" title="clients">Xplore the Data</a></li>
                 </ul>
 
                 <p> The Privacy Xplorer was made as part of a final Capstone under the UC Berkeley MIDS program by Erin Stanton, Alexa Bagnard, Emily Rail and Stefania Halac</p>
@@ -133,8 +134,8 @@
                     <a href="#what_is_a_policy" class="smoothscroll btn btn--stroke">
                         Learn a bit more
                     </a>
-                    <a href="#intro_data" class="smoothscroll btn btn--stroke">
-                        Dive into the data
+                    <a href="#data_explorer_charts" class="smoothscroll btn btn--stroke">
+                        Xplore the data
                     </a>
                 </div>
 
@@ -320,9 +321,19 @@
 
             <h1 style = "color: #FFFFFF; ">General Data Protection Regulation (GDPR)</h1>
 
-                <p style = "font-size: 1.5em; color : #FFFFFF; text-align: left;">Adopted in April 2016 and enforced in May 2018, the General Data Protection Regulation (GDPR) is a major overhaul of data protection and privacy affecting companies that operate in Europe. GDPR aims to give individuals greater transparency and control over the collection and use of their personal data.
-                <br></br>
-                GDPR increased users’ rights over their personal data by requiring that companies provide users with the ability to access, edit and request deletion of their personal data. In addition, GDPR expanded the definition of personal data to include cookies, and as such companies are required to provide users with information on the collection and option to disable cookies.</p>
+                <p style = "font-size: 1.5em; color : #FFFFFF; text-align: left;">
+                </br>
+                    The General Data Protection Regulation (GDPR) is a major overhaul of data protection and privacy. GDPR aims to give individuals greater transparency and control over the collection and use of their personal data.</br></br>
+
+                    GDPR was adopted April 2016, enforced May 2018 and affects companies that operate in Europe. </br></br>
+
+                    Some key requirements:
+                    <ul style = "font-size: 1.5em; color : #FFFFFF; text-align: left; padding-left: 40px;">
+                      <li>Provide users with the ability to access, edit and request deletion of their personal data</li>
+                      <li>Provide users information on the collection and option to disable cookies</li>
+                    </ul>
+                </p>
+
 
 
           </div>
@@ -342,20 +353,20 @@
                 <h1 style="color : #006D77; text-align: center;">Online Privacy Policies</h1>
                 <h3 style="margin-top: 1rem" class="subhead" >Training Data</h3>
                 <p  style = "font-size: 1.5em; color : #006D77; text-align: center;">
-                  The Online Privacy Policies (Opp-115) corpus is a collection of 115 website privacy policies labeled by law students to specify specific data practices within the policy.
+                  The Online Privacy Policies (OPP-115) corpus is a collection of 115 website privacy policies labeled by law students to specify specific data practices within the policy.
                 </p>
                 <div class="home-content__buttons">
                     <a href="https://www.usableprivacy.org/data" class="smoothscroll btn btn--stroke" style="width: auto;">
-                        Link to Opp-115 Website
+                        Link to OPP-115 Website
                     </a>
                 </div>
               </div>
 
               <div class="column" style="padding-left: 10px;">
                 <h1 style="color : #006D77; text-align: center;">Princeton-Leuven</h1>
-                <h3 style="margin-top: 1rem" class="subhead">Testing Data</h3>
+                <h3 style="margin-top: 1rem" class="subhead">Longitudinal Data</h3>
                 <p  style = "font-size: 1.5em; color : #006D77; text-align: center;">
-                The Princeton-Leuven Longitudinal Corpus of Privacy Policies is a non-labeled dataset of 910,000 privacy policy snapshots from 130,000 websites, spanning over two decades.
+                The Princeton-Leuven Longitudinal Corpus of Privacy Policies is an un-labeled dataset of 910,000 privacy policy snapshots from 130,000 websites, spanning over two decades.
               </p>
               <div class="home-content__buttons">
                   <a href="https://privacypolicies.cs.princeton.edu/" class="smoothscroll btn btn--stroke" style="width: auto;">
@@ -377,14 +388,14 @@
 
           <h1 style = "color: #FFFFFF">Model Architecture</h1>
 
-              <p style = "font-size: 1.5em; color : #FFFFFF; text-align: left;">Privacy Xplorer utilizes a two-step, semi-supervised classification model, consisting of six fine-tuned LegalBERT models.
+              <p style = "font-size: 1.5em; color : #FFFFFF; text-align: left;">Privacy Xplorer utilizes a two-stage classification model, consisting of six fine-tuned LegalBERT models.
               <br></br>
-              These models were initially trained using the Online Privacy Policies (Opp-115) corpus. However, due to the size of the Opp-115 dataset, semi-supervised techniques were later applied to increase the size of the traing data, which in turned drastically improved the accuracy of the models.
+              We trained our models on the OPP-115 corpus and applied semi-supervised techniques to augment the traing data, resulting in drastically improved model accuracy.
             </p>
             <p style = "font-size: 1em; color : #006D77; text-align: center;">Click on the buttons, below, to view Privacy Xplorer's LegalBERT model.</p>
 
           <div id="cf7" class="shadow">
-            <img class='opaque' src="images/data_model/step0_training.jpg" />
+            <img class='opaque' src="images/data_model/step0_training.jpg"/>
             <img src="images/data_model/step1_category_model.jpg" />
             <img src="images/data_model/step2_attribute_models.jpg" />
             <img src="images/data_model/step3_semi_supervised.jpg" />
@@ -506,26 +517,26 @@ am4core.useTheme(am4themes_myTheme);
 var chart = am4core.create("chartdiv", am4charts.XYChart);
 
 chart.data = [
-{ year: "2000", Number_of_View: 12.4229492650545, Number_of_Edit: 17.5912754860123, Number_of_Delete: 16.4058795637743},
-{ year: "2001", Number_of_View: 15.6728067436778, Number_of_Edit: 19.5753980643147, Number_of_Delete: 18.2016859194505},
-{ year: "2002", Number_of_View: 17.3913043478261, Number_of_Edit: 18.9006533002929, Number_of_Delete: 17.5264699256589},
-{ year: "2003", Number_of_View: 18.0451127819549, Number_of_Edit: 18.3646616541353, Number_of_Delete: 18.4398496240602},
-{ year: "2004", Number_of_View: 19.0086402910414, Number_of_Edit: 18.3568288616038, Number_of_Delete: 18.720630589662},
-{ year: "2005", Number_of_View: 20.2281758748878, Number_of_Edit: 18.9206511985643, Number_of_Delete: 19.0872965004487},
-{ year: "2006", Number_of_View: 20.7712711691492, Number_of_Edit: 19.2307692307692, Number_of_Delete: 19.3633952254642},
-{ year: "2007", Number_of_View: 20.7062876830319, Number_of_Edit: 19.4229112833764, Number_of_Delete: 20.1808785529716},
-{ year: "2008", Number_of_View: 19.8663200891199, Number_of_Edit: 19.1013739324174, Number_of_Delete: 20.5495729669514},
-{ year: "2009", Number_of_View: 19.6513897301299, Number_of_Edit: 18.6082508917155, Number_of_Delete: 21.3002220876237},
-{ year: "2010", Number_of_View: 19.7287231085663, Number_of_Edit: 18.5891378064373, Number_of_Delete: 21.8633609427984},
-{ year: "2011", Number_of_View: 20.6169042152233, Number_of_Edit: 19.6681540527661, Number_of_Delete: 24.533206255686},
-{ year: "2012", Number_of_View: 21.1768358950474, Number_of_Edit: 19.8144698028256, Number_of_Delete: 24.3401645707188},
-{ year: "2013", Number_of_View: 21.3556651596109, Number_of_Edit: 20.1294697903822, Number_of_Delete: 25.0479517742156},
-{ year: "2014", Number_of_View: 21.8889163780307, Number_of_Edit: 20.9549727857496, Number_of_Delete: 26.1999010390896},
-{ year: "2015", Number_of_View: 22.650896994854, Number_of_Edit: 21.5847382935775, Number_of_Delete: 26.9183748898303},
-{ year: "2016", Number_of_View: 23.5080590545849, Number_of_Edit: 22.6141135039957, Number_of_Delete: 27.929026141135},
-{ year: "2017", Number_of_View: 24.5701807728454, Number_of_Edit: 23.3899054674111, Number_of_Delete: 27.9755652606556},
-{ year: "2018", Number_of_View: 35.9075180874489, Number_of_Edit: 32.9820698332809, Number_of_Delete: 40.4057879836427},
-{ year: "2019", Number_of_View: 39.364037988413, Number_of_Edit: 35.0043649638898, Number_of_Delete: 43.9670908177032},
+{ year: "2000", Number_of_View: 12.4, Number_of_Edit: 17.6, Number_of_Delete: 16.4},
+{ year: "2001", Number_of_View: 15.7, Number_of_Edit: 19.6, Number_of_Delete: 18.2},
+{ year: "2002", Number_of_View: 17.4, Number_of_Edit: 18.9, Number_of_Delete: 17.5},
+{ year: "2003", Number_of_View: 18.1, Number_of_Edit: 18.4, Number_of_Delete: 18.4},
+{ year: "2004", Number_of_View: 19.0, Number_of_Edit: 18.4, Number_of_Delete: 18.7},
+{ year: "2005", Number_of_View: 20.2, Number_of_Edit: 18.9, Number_of_Delete: 19.1},
+{ year: "2006", Number_of_View: 20.8, Number_of_Edit: 19.2, Number_of_Delete: 19.4},
+{ year: "2007", Number_of_View: 20.7, Number_of_Edit: 19.4, Number_of_Delete: 20.2},
+{ year: "2008", Number_of_View: 19.9, Number_of_Edit: 19.1, Number_of_Delete: 20.5},
+{ year: "2009", Number_of_View: 19.7, Number_of_Edit: 18.6, Number_of_Delete: 21.3},
+{ year: "2010", Number_of_View: 19.7, Number_of_Edit: 18.6, Number_of_Delete: 21.9},
+{ year: "2011", Number_of_View: 20.6, Number_of_Edit: 19.7, Number_of_Delete: 24.5},
+{ year: "2012", Number_of_View: 21.2, Number_of_Edit: 19.8, Number_of_Delete: 24.3},
+{ year: "2013", Number_of_View: 21.4, Number_of_Edit: 20.1, Number_of_Delete: 25.0},
+{ year: "2014", Number_of_View: 21.9, Number_of_Edit: 21.0, Number_of_Delete: 26.2},
+{ year: "2015", Number_of_View: 22.7, Number_of_Edit: 21.6, Number_of_Delete: 26.9},
+{ year: "2016", Number_of_View: 23.5, Number_of_Edit: 22.6, Number_of_Delete: 27.9},
+{ year: "2017", Number_of_View: 24.6, Number_of_Edit: 23.4, Number_of_Delete: 28.0},
+{ year: "2018", Number_of_View: 35.9, Number_of_Edit: 33.0, Number_of_Delete: 40.4},
+{ year: "2019", Number_of_View: 39.4, Number_of_Edit: 35.0, Number_of_Delete: 44.0},
 
 
 ];
@@ -603,8 +614,8 @@ title.marginBottom = 30;
 
 // axis ranges
 var range = dateAxis.axisRanges.create();
-range.date = new Date(2016, 0, 1);
-range.endDate = new Date(2018, 0, 1);
+range.date = new Date(2016, 3, 1);
+range.endDate = new Date(2016, 5, 1);
 range.axisFill.fill = chart.colors.getIndex(4);
 range.axisFill.fillOpacity = 0.5;
 
@@ -617,8 +628,8 @@ range.label.verticalCenter = "bottom";
 
 // axis ranges
 var range2 = dateAxis.axisRanges.create();
-range2.date = new Date(2018, 0, 1);
-range2.endDate = new Date(2019, 12, 1);
+range2.date = new Date(2018, 4, 1);
+range2.endDate = new Date(2018, 6, 1);
 range2.axisFill.fill = chart.colors.getIndex(4);
 range2.axisFill.fillOpacity = 0.8;
 
@@ -670,14 +681,14 @@ chart2.data = [
 { category: "adult", Number_of_View: 35.0795135640786, Number_of_Edit: 39.1955098222638, Number_of_Delete: 45.6501403180543},
 { category: "blogs", Number_of_View: 20.9090909090909, Number_of_Edit: 13.6363636363636, Number_of_Delete: 40},
 { category: "business", Number_of_View: 41.6570982409406, Number_of_Edit: 36.7749046984798, Number_of_Delete: 47.2006613695862},
-{ category: "economyandfinance", Number_of_View: 45.6989247311828, Number_of_Edit: 37.6344086021505, Number_of_Delete: 37.6344086021505},
+{ category: "economy & finance", Number_of_View: 45.6989247311828, Number_of_Edit: 37.6344086021505, Number_of_Delete: 37.6344086021505},
 { category: "education", Number_of_View: 35.1249053747161, Number_of_Edit: 29.4663133989402, Number_of_Delete: 35.7872823618471},
 { category: "entertainment", Number_of_View: 33.7785588752197, Number_of_Edit: 31.1072056239016, Number_of_Delete: 38.9103690685413},
-{ category: "foodandrecipes", Number_of_View: 38.4615384615385, Number_of_Edit: 22.3076923076923, Number_of_Delete: 53.0769230769231},
+{ category: "food & recipes", Number_of_View: 38.4615384615385, Number_of_Edit: 22.3076923076923, Number_of_Delete: 53.0769230769231},
 { category: "gambling", Number_of_View: 45.3846153846154, Number_of_Edit: 41.5384615384615, Number_of_Delete: 50.7692307692308},
 { category: "games", Number_of_View: 35.2549889135255, Number_of_Edit: 31.9290465631929, Number_of_Delete: 42.7937915742794},
-{ category: "informationtech", Number_of_View: 29.9435028248588, Number_of_Edit: 26.271186440678, Number_of_Delete: 32.6741996233522},
-{ category: "newsandmedia", Number_of_View: 37.5, Number_of_Edit: 32.9545454545455, Number_of_Delete: 41.4772727272727},
+{ category: "information tech", Number_of_View: 29.9435028248588, Number_of_Edit: 26.271186440678, Number_of_Delete: 32.6741996233522},
+{ category: "news & media", Number_of_View: 37.5, Number_of_Edit: 32.9545454545455, Number_of_Delete: 41.4772727272727},
 { category: "personals", Number_of_View: 43.9393939393939, Number_of_Edit: 52.2727272727273, Number_of_Delete: 59.0909090909091},
 { category: "shopping", Number_of_View: 41.750301083902, Number_of_Edit: 39.502207948615, Number_of_Delete: 43.1553592934564},
 { category: "sports", Number_of_View: 39.527027027027, Number_of_Edit: 40.5405405405405, Number_of_Delete: 40.5405405405405},
@@ -774,7 +785,7 @@ slider.events.on("rangechanged", function() {
 <!-- ******************************************************************************** -->
 <!-- ***************************** data_explorer  *********************************************** -->
 
-    <section id='data_explorer' class="s-works">
+    <section id='data_explorer_charts' class="s-works">
 
         <div class="intro-wrap">
 

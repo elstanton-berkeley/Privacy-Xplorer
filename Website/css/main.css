@@ -210,11 +210,11 @@ em, i, strong, b {
 }
 
 em, i {
-    font-family: "lora-italic", serif;
+    font-family: "montserrat-italic", serif;
 }
 
 strong, b {
-    font-family: "lora-bold", serif;
+    font-family: "montserrat-bold", serif;
 }
 
 small {
@@ -3674,8 +3674,8 @@ footer .row {
 #cf7 {
   position:relative;
   /* max-width:100%; */
-  height: 400px;
-  width:600px;
+  height: 600px;
+  width:1200px;
   margin:0 auto 10px;
 }
 #cf7 img {

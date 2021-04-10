@@ -305,7 +305,7 @@
           labelBullet.label.propertyFields.verticalCenter = "center";
 
 
-            </script>
+            </script></br>
 
               <div class="row section-header has-bottom-sep" >
 
@@ -347,8 +347,6 @@
                 <p  style = "font-size: 1.5em; color : #006D77; text-align: center;">
                   The Online Privacy Policies (OPP-115) corpus is a collection of 115 website privacy policies labeled by law students to specify specific data practices within the policy.
                 </p>
-
-      
               </div>
 
               <div class="column" style="padding-left: 10px;">
@@ -364,8 +362,7 @@
         </div>
 
           <div class="row section-header has-bottom-sep" data-aos="fade-up">
-
-          <div class="row">
+            <div class="row">
 
           <h1 style = "color: #006D77">Model Architecture</h1>
 
@@ -374,8 +371,9 @@
               We trained our models on the OPP-115 corpus and applied semi-supervised techniques to augment the traing data, resulting in drastically improved model accuracy.
             </p>
             <p style = "font-size: 1em; color : #006D77; text-align: center;">Click on the buttons, below, to view Privacy Xplorer's LegalBERT model.</p>
+          
 
-          <div id="cf7" class="s-about" >
+          <div id="cf7">
 
             <img class='opaque' src="images/data_model/step0_training.jpg"/>
             <img src="images/data_model/step1_category_model.jpg"  />
@@ -383,10 +381,8 @@
             <img src="images/data_model/step3_semi_supervised.jpg" />
             <img src="images/data_model/step4_retrain_model.jpg" />
             <img src="images/data_model/step5_final_model.jpg" />
-            </br></br>
           </div>
-
-          <div class="row section-header has-bottom-sep" data-aos="fade-up">
+          <div>
             <p id="cf7_controls">
               <span class="selected">Train Models</span>
               <span>Category Model</span>
@@ -396,66 +392,8 @@
               <span>Final Model</span>
             </p>
           </div>
-          <br>
 
-          <h1 style = "color: #FFFFFF">Model Results</h1>
-          <table id="results_table">
-            <tbody>
-              <tr style="height: 23px;">
-                <td style="height: 23px;"><strong>Model</strong></td>
-                <td style="height: 23px;"><strong>Precision</strong></td>
-                <td style="height: 23px;"><strong>Recall</strong></td>
-                <td style="height: 23px;"><strong>F1-Score</strong></td>
-                <td style="height: 23px;"><strong>Baseline F1-Score</strong></td>
-              </tr>
-              <tr style="height: 23px;">
-                <td style="height: 23px;">User Edit, Access and Deletion Category</td>
-                <td style="height: 23px;">0.85</td>
-                <td style="height: 23px;">0.87</td>
-                <td style="height: 23px;">0.86</td>
-                <td style="height: 23px;">0.82</td>
-              </tr>
-              <tr style="height: 23px;">
-                <td style="height: 23px;">&nbsp;&nbsp;&nbsp;View Attribute</td>
-                <td style="height: 23px;">0.76</td>
-                <td style="height: 23px;">0.81</td>
-                <td style="height: 23px;">0.87</td>
-                <td style="height: 23px;">0.53</td>
-              </tr>
-              <tr style="height: 23px;">
-                <td style="height: 23px;">&nbsp;&nbsp;&nbsp;Edit Attribute</td>
-                <td style="height: 23px;">0.84</td>
-                <td style="height: 23px;">0.83</td>
-                <td style="height: 23px;">0.83</td>
-                <td style="height: 23px;">0.63</td>
-              </tr>
-              <tr style="height: 23px;">
-                <td style="height: 23px;">&nbsp;&nbsp;&nbsp;Delete Attribute</td>
-                <td style="height: 23px;">0.95</td>
-                <td style="height: 23px;">0.81</td>
-                <td style="height: 23px;">0.87</td>
-                <td style="height: 23px;">n/a</td>
-              </tr>
-              <tr style="height: 23px;">
-                <td style="height: 23px;">&nbsp;User Choice Category</td>
-                <td style="height: 23px;">0.82</td>
-                <td style="height: 23px;">0.82</td>
-                <td style="height: 23px;">0.82</td>
-                <td style="height: 23px;">0.75</td>
-              </tr>
-              <tr style="height: 23px;">
-                <td style="height: 23px;">&nbsp; &nbsp;&nbsp;Cookie Attribute</td>
-                <td style="height: 23px;">0.99</td>
-                <td style="height: 23px;">0.95</td>
-                <td style="height: 23px;">0.97</td>
-                <td style="height: 23px;">0.94</td>
-              </tr>
-            </tbody>
-          </table>
-
-        </div>
-
-        <script>
+          <script>
           $(document).ready(function() {
             $("#cf7_controls").on('click', 'span', function() {
               $("#cf7 img").removeClass("opaque");
@@ -469,16 +407,88 @@
             });
             });
         </script>
+      </div>
+
+          <div class="row"></br></br>
+          <h1 style = "color: #006D77">Model Results</h1>
+          <table id="results_table">
+            <tbody>
+              <tr  style="height: 23px;">
+                <td  style="height: 23px; text-align: left; font-size: 18px;"><strong>Model</strong></td>
+                <td  style="height: 23px; text-align: left; font-size: 18px;"><strong>Precision</strong></td>
+                <td  style="height: 23px; text-align: left; font-size: 18px;"><strong>Recall</strong></td>
+                <td  style="height: 23px; text-align: left; font-size: 18px; color: #006D77;"><strong>F1-Score</strong></td>
+                <td  style="height: 23px; text-align: left; font-size: 18px; color: #CDE7E5;"><strong>Baseline F1-Score</strong></td>
+              </tr>
+              <tr style="height: 23px;">
+                <td style="height: 23px;">User Edit, Access and Deletion Category</td>
+                <td style="height: 23px; text-align: right;">0.85</td>
+                <td style="height: 23px; text-align: right;">0.87</td>
+                <td style="height: 23px; text-align: right; color: #006D77">0.86</td>
+                <td style="height: 23px; text-align: right; color: #CDE7E5;">0.82</td>
+              </tr>
+              <tr style="height: 23px;">
+                <td style="height: 23px;">&nbsp;&nbsp;&nbsp;View Attribute</td>
+                <td style="height: 23px; text-align: right;">0.76</td>
+                <td style="height: 23px; text-align: right;">0.81</td>
+                <td style="height: 23px; text-align: right; color: #006D77">0.87</td>
+                <td style="height: 23px; text-align: right; color: #CDE7E5;">0.53</td>
+              </tr>
+              <tr style="height: 23px;">
+                <td style="height: 23px;">&nbsp;&nbsp;&nbsp;Edit Attribute</td>
+                <td style="height: 23px; text-align: right;">0.84</td>
+                <td style="height: 23px; text-align: right;">0.83</td>
+                <td style="height: 23px; text-align: right; color: #006D77">0.83</td>
+                <td style="height: 23px; text-align: right; color: #CDE7E5;">0.63</td>
+              </tr>
+              <tr style="height: 23px;">
+                <td style="height: 23px;">&nbsp;&nbsp;&nbsp;Delete Attribute</td>
+                <td style="height: 23px; text-align: right;">0.95</td>
+                <td style="height: 23px; text-align: right;">0.81</td>
+                <td style="height: 23px; text-align: right; color: #006D77">0.87</td>
+                <td style="height: 23px; text-align: right; color: #CDE7E5;">n/a</td>
+              </tr>
+              <tr style="height: 23px;">
+                <td style="height: 23px;">&nbsp;User Choice Category</td>
+                <td style="height: 23px; text-align: right;">0.82</td>
+                <td style="height: 23px; text-align: right;">0.82</td>
+                <td style="height: 23px; text-align: right; color: #006D77">0.82</td>
+                <td style="height: 23px; text-align: right; color: #CDE7E5;">0.75</td>
+              </tr>
+              <tr style="height: 23px;">
+                <td style="height: 23px;">&nbsp; &nbsp;&nbsp;Cookie Attribute</td>
+                <td style="height: 23px; text-align: right;">0.99</td>
+                <td style="height: 23px; text-align: right;">0.95</td>
+                <td style="height: 23px; text-align: right; color: #006D77">0.97</td>
+                <td style="height: 23px; text-align: right; color: #CDE7E5;">0.94</td>
+              </tr>
+            </tbody>
+          </table>
+
+          
+        </div>
+      </br>
+        <h1 style = "color: #006D77; align-content: center;">Model Attributes</h1>
+      </div>
+
+
+        <div class = 'row' style= "align-content: center;">
+          
+
+        <img src='images/sectionintro.png'> </br></br>
+      </div>
 
     </section>
 <!-- ******************************************************************************** -->
 <!-- ******************************************************************************** -->
 <!-- *********************************  high level % chart ***************************************** -->
 <section id='data_explorer' class="s-services">
+  </br></br>
       <div class="row section-header has-bottom-sep" data-aos="fade-up">
+      <img src='images/anintiallook.png'> 
 
 </br></br>
-<img src='images/sectionintro.png'> </br></br>
+<h1 style = "color: #006D77; align-content: center;">Privacy policy changes over the last 20 years</h1>
 <div id="chartdiv"></div>
 <script>
 
@@ -589,13 +599,6 @@ chart.scrollbarX = new am4core.Scrollbar();
 chart.legend = new am4charts.Legend();
 chart.legend.position = "top";
 
-// Add chart title
-var title = chart.titles.create();
-title.text = "Privacy policy changes over the last 20 years";
-title.fontSize = 25;
-title.marginBottom = 30;
-
-
 
 // axis ranges
 var range = dateAxis.axisRanges.create();
@@ -635,6 +638,7 @@ range2.label.verticalCenter = "bottom";
 </br></br>
 
           <div class="row section-header has-bottom-sep" data-aos="fade-up">
+<h1 style = "color: #006D77; align-content: center;">2019: Adoption of privacy rights by industry, leaders and laggers</h1>
 
 <div id="chartdiv-2"></div>
 
@@ -733,13 +737,6 @@ chart2.legend.position = "bottom";
 chart2.marginBottom=30;
 
 
-
-// Add chart title
-var title = chart2.titles.create();
-title.text = "2019: Adoption of privacy rights by industry, leaders and laggers";
-title.fontSize = 25;
-title.marginBottom = 30;
-title.color = "#006D77"
 
 
 chart2.seriesContainer.zIndex = -1;

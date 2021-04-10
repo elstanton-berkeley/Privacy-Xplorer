@@ -117,7 +117,7 @@
                 </div>
 
                 <div class="column">
-                  <img src='images/regulator image.png'>              
+                  <img src='images/regulator image.png' style='padding-top: 50px;'>              
 
                 </div>
               </div>
@@ -138,11 +138,11 @@
 
             <div class="home-content__line"></div>
 
-        </div> <!-- end home-content -->
+        </div> 
       </div>
 
 
-    </section> <!-- end s-home -->
+    </section>
 
 
       <!-- ******************************************************************************** -->
@@ -152,7 +152,7 @@
 
       <section id='what_is_a_policy' class="s-about" style = "background: #FFFFFF">
 
-          <div class="row section-header has-bottom-sep" data-aos="fade-up">
+          <div class="row section-header" data-aos="fade-up">
               <div class="col-full">
 
               <img src="images/InfoIntro.png" width="1200">
@@ -168,14 +168,15 @@
       <!-- ******************************** what_is_a_regulation ******************************************* -->
 
 
-      <section id='what_is_a_regulation' class="s-about">
+      <section id='what_is_a_regulation' class="s-services" >
           <div class="row section-header has-bottom-sep" data-aos="fade-up">
+          </br></br></br>
 
-            <h1 style = "color: #FFFFFF">What Are Data Privacy Regulations?</h1>
+            <img src='images/dataprivacytext.png'>
 
-                <p style = "font-size: 1.5em; color : #FFFFFF; text-align: left;"> Since the 1970s, regulations have been put in place to help govern the collection, use and distribution of consumers's personal information. More recently, these regulations have been focused on protecting the consumer by requiring companies to disclose what data they track and how it is used. </br></p>
+                <p style = "font-size: 1.5em; color : #006D77; text-align: left;"> Since the 1970s, regulations have been put in place to help govern the collection, use and distribution of consumers's personal information. More recently, these regulations have been focused on protecting the consumer by requiring companies to disclose what data they track and how it is used. </br></p>
             <br></br>
-            <h1 style = "color: #FFFFFF">Regulations Timeline</h1>
+            <h1 style = "color: #006D77">Regulations Timeline</h1>
           </div>
 
           <div id="chartdiv-3"></div>
@@ -293,13 +294,13 @@
           labelBullet.label.truncate = false;
           labelBullet.label.textAlign = "middle";
           labelBullet.label.padding(20, 20, 20, 20)
-          labelBullet.label.fill = am4core.color("#FFF");
+          labelBullet.label.fill = am4core.color("#006D77");
           labelBullet.label.background.fill = series.fill;
           labelBullet.label.background.fillOpacity = 0.1;
 
           labelBullet.setStateOnChildren = true;
           labelBullet.states.create("hover").properties.scale = 1.2;
-          labelBullet.label.states.create("hover").properties.fill = am4core.color("#000");
+          labelBullet.label.states.create("hover").properties.fill = am4core.color("#006D77");
 
           labelBullet.label.propertyFields.verticalCenter = "center";
 
@@ -308,16 +309,16 @@
 
               <div class="row section-header has-bottom-sep" >
 
-            <h1 style = "color: #FFFFFF; ">General Data Protection Regulation (GDPR)</h1>
+            <img src='images/GDPRTEXT.png'>
 
-                <p style = "font-size: 1.5em; color : #FFFFFF; text-align: left;">
+                <p style = "font-size: 1.5em; color : #006D77; text-align: left;">
                 </br>
                     The General Data Protection Regulation (GDPR) is a major overhaul of data protection and privacy. GDPR aims to give individuals greater transparency and control over the collection and use of their personal data.</br></br>
 
                     GDPR was adopted April 2016, enforced May 2018 and affects companies that operate in Europe. </br></br>
 
                     Some key requirements:
-                    <ul style = "font-size: 1.5em; color : #FFFFFF; text-align: left; padding-left: 40px;">
+                    <ul style = "font-size: 1.5em; color : #006D77; text-align: left; padding-left: 40px;">
                       <li>Provide users with the ability to access, edit and request deletion of their personal data</li>
                       <li>Provide users information on the collection and option to disable cookies</li>
                     </ul>
@@ -334,51 +335,41 @@
 <!-- ******************************************************************************** -->
 <!-- ******************************** privacy_xploer_analysis ******************************************* -->
 
-    <section id='intro_data' class="s-services">
+    <section id='intro_data' class="s-services" style = "background: #83c5be">
+        </br></br>
           <div class="row section-header has-bottom-sep" data-aos="fade-up">
             <div class="row">
+              <img src='images/datamodels.png'>
               <h1 style="color: #006D77">The Data</h1>
               <div class="column" style="padding-right: 10px;">
-                <h1 style="color : #006D77; text-align: center;">Online Privacy Policies</h1>
+                <h1 style="color : #006D77; text-align: center;">Online Privacy Policies <a href="https://www.usableprivacy.org/data"><img src='images/arrow.png' style="width:35px;height:35px"></a> </h1>
                 <h3 style="margin-top: 1rem" class="subhead" >Training Data</h3>
                 <p  style = "font-size: 1.5em; color : #006D77; text-align: center;">
                   The Online Privacy Policies (OPP-115) corpus is a collection of 115 website privacy policies labeled by law students to specify specific data practices within the policy.
                 </p>
 
-                  <div class="home-content__buttons">
-                      <a href="https://www.usableprivacy.org/data" class="smoothscroll btn btn--stroke" style="width: 300px; text-align: center;">
-                        OPP-115 Data
-                      </a>
-                  </div>
+      
               </div>
 
               <div class="column" style="padding-left: 10px;">
-                <h1 style="color : #006D77; text-align: center;">Princeton-Leuven</h1>
+
+                <h1 style="color : #006D77; text-align: center;">Princeton-Leuven  <a href="https://privacypolicies.cs.princeton.edu/"><img src='images/arrow2.png' style="width:35px;height:35px"></a> </h1>
                 <h3 style="margin-top: 1rem" class="subhead">Longitudinal Data</h3>
                 <p  style = "font-size: 1.5em; color : #006D77; text-align: center;">
                 The Princeton-Leuven Longitudinal Corpus of Privacy Policies is an un-labeled dataset of 910,000 privacy policy snapshots from 130,000 websites, spanning over two decades.
               </p>
-              <div class="home-content__buttons">
-                  <a href="https://privacypolicies.cs.princeton.edu/" class="smoothscroll btn btn--stroke" style="width: 300px;">
-                      Princeton-Leuven Data
-                  </a>
-              </div>
+              
             </div>
           </div>
         </div>
-    </section>
 
-    <!-- ******************************************************************************** -->
-    <!-- ******************************************************************************** -->
-    <!-- ******************************** intro_model ******************************************* -->
+          <div class="row section-header has-bottom-sep" data-aos="fade-up">
 
+          <div class="row">
 
-    <section id='intro_model' class="s-about">
-        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+          <h1 style = "color: #006D77">Model Architecture</h1>
 
-          <h1 style = "color: #FFFFFF">Model Architecture</h1>
-
-              <p style = "font-size: 1.5em; color : #FFFFFF; text-align: left;">Privacy Xplorer utilizes a two-stage classification model, consisting of six fine-tuned LegalBERT models.
+              <p style = "font-size: 1.5em; color : #006D77; text-align: left;">Privacy Xplorer utilizes a two-stage classification model, consisting of six fine-tuned LegalBERT models.
               <br></br>
               We trained our models on the OPP-115 corpus and applied semi-supervised techniques to augment the traing data, resulting in drastically improved model accuracy.
             </p>

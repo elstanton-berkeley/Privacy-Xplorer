@@ -174,7 +174,7 @@
 
             <img src='images/dataprivacytext.png'>
 
-                <p style = "font-size: 1.5em; color : #006D77; text-align: left;"> Since the 1970s, regulations have been put in place to help govern the collection, use and distribution of consumers's personal information. More recently, these regulations have been focused on protecting the consumer by requiring companies to disclose what data they track and how it is used. </br></p>
+                <p style = "font-size: 1.5em; color : #006D77; text-align: left;"> Since the 1970s, regulations have been put in place to help govern the collection, use and distribution of consumer's personal information. More recently, these regulations have been focused on protecting the consumer by requiring companies to disclose what data they track and how it is used. </br></p>
             <br></br>
             <h1 style = "color: #006D77">Regulations Timeline</h1>
           </div>
@@ -219,7 +219,7 @@
           }, {
             "x": "4",
             "y": 2,
-            "text": "[bold]1999[/]\nGramm Leach Bliley Act",
+            "text": "[bold]2002[/]\nePrivacy Directive 2002",
             "center": "top"
           }, {
             "x": "4",
@@ -323,7 +323,8 @@
                       <li>Provide users information on the collection and option to disable cookies</li>
                     </ul>
                 </p>
-
+              </br>
+                          <img src="images/gdpr.png" width="1200">
 
 
           </div>
@@ -370,43 +371,8 @@
               <br></br>
               We trained our models on the OPP-115 corpus and applied semi-supervised techniques to augment the traing data, resulting in drastically improved model accuracy.
             </p>
-            <p style = "font-size: 1em; color : #006D77; text-align: center;">Click on the buttons, below, to view Privacy Xplorer's LegalBERT model.</p>
-          
-
-          <div id="cf7">
-
-            <img class='opaque' src="images/data_model/step0_training.jpg"/>
-            <img src="images/data_model/step1_category_model.jpg"  />
-            <img src="images/data_model/step2_attribute_models.jpg" />
-            <img src="images/data_model/step3_semi_supervised.jpg" />
-            <img src="images/data_model/step4_retrain_model.jpg" />
-            <img src="images/data_model/step5_final_model.jpg" />
-          </div>
-          <div>
-            <p id="cf7_controls">
-              <span class="selected">Train Models</span>
-              <span>Category Model</span>
-              <span>Attribute Models</span>
-              <span>Add Training Data</span>
-              <span>Retrain Model</span>
-              <span>Final Model</span>
-            </p>
-          </div>
-
-          <script>
-          $(document).ready(function() {
-            $("#cf7_controls").on('click', 'span', function() {
-              $("#cf7 img").removeClass("opaque");
-
-              var newImage = $(this).index();
-
-              $("#cf7 img").eq(newImage).addClass("opaque");
-
-              $("#cf7_controls span").removeClass("selected");
-              $(this).addClass("selected");
-            });
-            });
-        </script>
+           
+           <img src='images/modelsection.png'>
       </div>
 
           <div class="row"></br></br>
@@ -551,7 +517,7 @@ valueAxis.tooltip.disabled = true;
 
 var series = chart.series.push(new am4charts.LineSeries());
 series.dataFields.dateX = "year";
-series.name = "% View";
+series.name = "1. View";
 series.dataFields.valueY = "Number_of_View";
 series.tooltipText = "[#000]{valueY.value}[/]";
 series.tooltip.background.fill = am4core.color("#FFF");
@@ -563,7 +529,7 @@ series.strokeWidth = 2;
 series.stacked = false;
 
 var series2 = chart.series.push(new am4charts.LineSeries());
-series2.name = "% Edit";
+series2.name = "2. Edit";
 series2.dataFields.dateX = "year";
 series2.dataFields.valueY = "Number_of_Edit";
 series2.tooltipText = "[#000]{valueY.value}[/]";
@@ -577,7 +543,7 @@ series2.stacked = false;
 series2.strokeWidth = 2;
 
 var series3 = chart.series.push(new am4charts.LineSeries());
-series3.name = "% Delete";
+series3.name = "3. Delete";
 series3.dataFields.dateX = "year";
 series3.dataFields.valueY = "Number_of_Delete";
 series3.tooltipText = "[#000]{valueY.value}[/]";
@@ -667,21 +633,21 @@ label.text = "Drag slider to change radius";
 label.exportable = false;
 
 chart2.data = [
-{ category: "adult", Number_of_View: 35.0795135640786, Number_of_Edit: 39.1955098222638, Number_of_Delete: 45.6501403180543},
-{ category: "blogs", Number_of_View: 20.9090909090909, Number_of_Edit: 13.6363636363636, Number_of_Delete: 40},
-{ category: "business", Number_of_View: 41.6570982409406, Number_of_Edit: 36.7749046984798, Number_of_Delete: 47.2006613695862},
-{ category: "economy & finance", Number_of_View: 45.6989247311828, Number_of_Edit: 37.6344086021505, Number_of_Delete: 37.6344086021505},
-{ category: "education", Number_of_View: 35.1249053747161, Number_of_Edit: 29.4663133989402, Number_of_Delete: 35.7872823618471},
-{ category: "entertainment", Number_of_View: 33.7785588752197, Number_of_Edit: 31.1072056239016, Number_of_Delete: 38.9103690685413},
-{ category: "food & recipes", Number_of_View: 38.4615384615385, Number_of_Edit: 22.3076923076923, Number_of_Delete: 53.0769230769231},
-{ category: "gambling", Number_of_View: 45.3846153846154, Number_of_Edit: 41.5384615384615, Number_of_Delete: 50.7692307692308},
-{ category: "games", Number_of_View: 35.2549889135255, Number_of_Edit: 31.9290465631929, Number_of_Delete: 42.7937915742794},
-{ category: "information tech", Number_of_View: 29.9435028248588, Number_of_Edit: 26.271186440678, Number_of_Delete: 32.6741996233522},
-{ category: "news & media", Number_of_View: 37.5, Number_of_Edit: 32.9545454545455, Number_of_Delete: 41.4772727272727},
-{ category: "personals", Number_of_View: 43.9393939393939, Number_of_Edit: 52.2727272727273, Number_of_Delete: 59.0909090909091},
-{ category: "shopping", Number_of_View: 41.750301083902, Number_of_Edit: 39.502207948615, Number_of_Delete: 43.1553592934564},
-{ category: "sports", Number_of_View: 39.527027027027, Number_of_Edit: 40.5405405405405, Number_of_Delete: 40.5405405405405},
-{ category: "travel", Number_of_View: 48.1308411214953, Number_of_Edit: 44.392523364486, Number_of_Delete: 46.2616822429907}
+{ category: "adult", Number_of_View: 35.07, Number_of_Edit: 39.19, Number_of_Delete: 45.65},
+{ category: "blogs", Number_of_View: 20.90, Number_of_Edit: 13.63, Number_of_Delete: 40},
+{ category: "business", Number_of_View: 41.65, Number_of_Edit: 36.77, Number_of_Delete: 47.20},
+{ category: "economy & finance", Number_of_View: 45.69, Number_of_Edit: 37.63, Number_of_Delete: 37.63},
+{ category: "education", Number_of_View: 35.12, Number_of_Edit: 29.46, Number_of_Delete: 35.78},
+{ category: "entertainment", Number_of_View: 33.77, Number_of_Edit: 31.10, Number_of_Delete: 38.91},
+{ category: "food & recipes", Number_of_View: 38.46, Number_of_Edit: 22.30, Number_of_Delete: 53.07},
+{ category: "gambling", Number_of_View: 45.38, Number_of_Edit: 41.53, Number_of_Delete: 50.76},
+{ category: "games", Number_of_View: 35.25, Number_of_Edit: 31.92, Number_of_Delete: 42.79},
+{ category: "information tech", Number_of_View: 29.94, Number_of_Edit: 26.27, Number_of_Delete: 32.67},
+{ category: "news & media", Number_of_View: 37.5, Number_of_Edit: 32.95, Number_of_Delete: 41.47},
+{ category: "personals", Number_of_View: 43.93, Number_of_Edit: 52.27, Number_of_Delete: 59.09},
+{ category: "shopping", Number_of_View: 41.75, Number_of_Edit: 39.50, Number_of_Delete: 43.15},
+{ category: "sports", Number_of_View: 39.52, Number_of_Edit: 40.54, Number_of_Delete: 40.54},
+{ category: "travel", Number_of_View: 48.13, Number_of_Edit: 44.39, Number_of_Delete: 46.26}
 
 
 ];
@@ -709,7 +675,7 @@ valueAxis.min = 0;
 
 var series1 = chart2.series.push(new am4charts.RadarColumnSeries());
 series1.columns.template.radarColumn.strokeOpacity = 1;
-series1.name = "% View";
+series1.name = "1. View";
 series1.dataFields.categoryX = "category";
 series1.columns.template.tooltipText = "{name}: {valueY.value}";
 series1.dataFields.valueY = "Number_of_View";
@@ -718,7 +684,7 @@ series1.stacked = true;
 var series2 = chart2.series.push(new am4charts.RadarColumnSeries());
 series2.columns.template.radarColumn.strokeOpacity = 1;
 series2.columns.template.tooltipText = "{name}: {valueY.value}";
-series2.name = "% Edit";
+series2.name = "2. Edit";
 series2.dataFields.categoryX = "category";
 series2.dataFields.valueY = "Number_of_Edit";
 series2.stacked = true;
@@ -726,7 +692,7 @@ series2.stacked = true;
 var series3 = chart2.series.push(new am4charts.RadarColumnSeries());
 series3.columns.template.radarColumn.strokeOpacity = 1;
 series3.columns.template.tooltipText = "{name}: {valueY.value}";
-series3.name = "% Delete";
+series3.name = "3. Delete";
 series3.dataFields.categoryX = "category";
 series3.dataFields.valueY = "Number_of_Delete";
 series3.stacked = true;
@@ -792,6 +758,12 @@ slider.events.on("rangechanged", function() {
                             <a href="#diff_ind" class="smoothscroll btn btn--stroke" style="color:#DEF2F1; width: 450px;
                             border:  0.2rem solid #3AAFA9" >
                             Difference between industries
+                        </a>
+                        </p>
+                        <p align = "center">
+                            <a href="#diff_ind" class="smoothscroll btn btn--stroke" style="color:#DEF2F1; width: 450px;
+                            border:  0.2rem solid #3AAFA9" >
+                            How well do the top websites score
                         </a>
                         </p>
                     </div>
@@ -971,7 +943,7 @@ slider.events.on("rangechanged", function() {
         <div class="row section-header" data-aos="fade-up">
             <div class="col-full">
                 <h3 class="subhead">Privacy Scores</h3>
-                <h1 class="display-2 display-2--light">How Well Do the Top Websites Score</h1>
+                <p>How Well Do the Top Websites Score<p>
             </div>
 
             <div class='myTableauViz' id='viz1617786110732' style='position: relative'>

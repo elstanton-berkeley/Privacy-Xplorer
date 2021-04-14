@@ -455,6 +455,7 @@
 
 </br></br>
 <h1 style = "color: #006D77; align-content: center;">Privacy policy changes over the last 20 years</h1>
+<p style = "color: #006D77;">Click an item in the legend to turn it on/off for further analysis.</p>
 <div id="chartdiv"></div>
 <script>
 
@@ -466,7 +467,7 @@ function am4themes_myTheme(target) {
       am4core.color("#83c5be"),
       am4core.color("#CDE7E5"),
       am4core.color("#E29578"),
-      am4core.color("#E29578"),
+      am4core.color("#006D77"),
     ];
   }
 }
@@ -478,26 +479,27 @@ am4core.useTheme(am4themes_myTheme);
 var chart = am4core.create("chartdiv", am4charts.XYChart);
 
 chart.data = [
-{ year: "2000", Number_of_View: 12.4, Number_of_Edit: 17.6, Number_of_Delete: 16.4},
-{ year: "2001", Number_of_View: 15.7, Number_of_Edit: 19.6, Number_of_Delete: 18.2},
-{ year: "2002", Number_of_View: 17.4, Number_of_Edit: 18.9, Number_of_Delete: 17.5},
-{ year: "2003", Number_of_View: 18.1, Number_of_Edit: 18.4, Number_of_Delete: 18.4},
-{ year: "2004", Number_of_View: 19.0, Number_of_Edit: 18.4, Number_of_Delete: 18.7},
-{ year: "2005", Number_of_View: 20.2, Number_of_Edit: 18.9, Number_of_Delete: 19.1},
-{ year: "2006", Number_of_View: 20.8, Number_of_Edit: 19.2, Number_of_Delete: 19.4},
-{ year: "2007", Number_of_View: 20.7, Number_of_Edit: 19.4, Number_of_Delete: 20.2},
-{ year: "2008", Number_of_View: 19.9, Number_of_Edit: 19.1, Number_of_Delete: 20.5},
-{ year: "2009", Number_of_View: 19.7, Number_of_Edit: 18.6, Number_of_Delete: 21.3},
-{ year: "2010", Number_of_View: 19.7, Number_of_Edit: 18.6, Number_of_Delete: 21.9},
-{ year: "2011", Number_of_View: 20.6, Number_of_Edit: 19.7, Number_of_Delete: 24.5},
-{ year: "2012", Number_of_View: 21.2, Number_of_Edit: 19.8, Number_of_Delete: 24.3},
-{ year: "2013", Number_of_View: 21.4, Number_of_Edit: 20.1, Number_of_Delete: 25.0},
-{ year: "2014", Number_of_View: 21.9, Number_of_Edit: 21.0, Number_of_Delete: 26.2},
-{ year: "2015", Number_of_View: 22.7, Number_of_Edit: 21.6, Number_of_Delete: 26.9},
-{ year: "2016", Number_of_View: 23.5, Number_of_Edit: 22.6, Number_of_Delete: 27.9},
-{ year: "2017", Number_of_View: 24.6, Number_of_Edit: 23.4, Number_of_Delete: 28.0},
-{ year: "2018", Number_of_View: 35.9, Number_of_Edit: 33.0, Number_of_Delete: 40.4},
-{ year: "2019", Number_of_View: 39.4, Number_of_Edit: 35.0, Number_of_Delete: 44.0},
+
+{ year: "2000", Number_of_View: 12.42, Number_of_Edit: 17.59, Number_of_Delete: 16.41, Number_of_Cookies: 28.12}, 
+{ year: "2001", Number_of_View: 15.67, Number_of_Edit: 19.58, Number_of_Delete: 18.2, Number_of_Cookies: 33.17}, 
+{ year: "2002", Number_of_View: 17.39, Number_of_Edit: 18.9, Number_of_Delete: 17.53, Number_of_Cookies: 33.92}, 
+{ year: "2003", Number_of_View: 18.05, Number_of_Edit: 18.36, Number_of_Delete: 18.44, Number_of_Cookies: 35.88}, 
+{ year: "2004", Number_of_View: 19.01, Number_of_Edit: 18.36, Number_of_Delete: 18.72, Number_of_Cookies: 37.91}, 
+{ year: "2005", Number_of_View: 20.23, Number_of_Edit: 18.92, Number_of_Delete: 19.09, Number_of_Cookies: 40.06}, 
+{ year: "2006", Number_of_View: 20.77, Number_of_Edit: 19.23, Number_of_Delete: 19.36, Number_of_Cookies: 42.58}, 
+{ year: "2007", Number_of_View: 20.71, Number_of_Edit: 19.42, Number_of_Delete: 20.18, Number_of_Cookies: 42.62}, 
+{ year: "2008", Number_of_View: 19.87, Number_of_Edit: 19.1, Number_of_Delete: 20.55, Number_of_Cookies: 44.14}, 
+{ year: "2009", Number_of_View: 19.65, Number_of_Edit: 18.61, Number_of_Delete: 21.3, Number_of_Cookies: 47.23}, 
+{ year: "2010", Number_of_View: 19.73, Number_of_Edit: 18.59, Number_of_Delete: 21.86, Number_of_Cookies: 49.88}, 
+{ year: "2011", Number_of_View: 20.62, Number_of_Edit: 19.67, Number_of_Delete: 24.53, Number_of_Cookies: 51.09}, 
+{ year: "2012", Number_of_View: 21.18, Number_of_Edit: 19.81, Number_of_Delete: 24.34, Number_of_Cookies: 54.59}, 
+{ year: "2013", Number_of_View: 21.36, Number_of_Edit: 20.13, Number_of_Delete: 25.05, Number_of_Cookies: 55.98}, 
+{ year: "2014", Number_of_View: 21.89, Number_of_Edit: 20.95, Number_of_Delete: 26.2, Number_of_Cookies: 59.04}, 
+{ year: "2015", Number_of_View: 22.65, Number_of_Edit: 21.58, Number_of_Delete: 26.92, Number_of_Cookies: 61.07}, 
+{ year: "2016", Number_of_View: 23.51, Number_of_Edit: 22.61, Number_of_Delete: 27.93, Number_of_Cookies: 62.29}, 
+{ year: "2017", Number_of_View: 24.57, Number_of_Edit: 23.39, Number_of_Delete: 27.98, Number_of_Cookies: 63.26}, 
+{ year: "2018", Number_of_View: 35.91, Number_of_Edit: 32.98, Number_of_Delete: 40.41, Number_of_Cookies: 67.54}, 
+{ year: "2019", Number_of_View: 39.36, Number_of_Edit: 35, Number_of_Delete: 43.97, Number_of_Cookies: 66.82}, 
 
 
 ];
@@ -514,6 +516,8 @@ dateAxis.baseInterval = {
 
 var valueAxis = chart.yAxes.push(new am4charts.ValueAxis());
 valueAxis.tooltip.disabled = true;
+valueAxis.title.text  = "% of Total Privacy Policies";
+
 
 var series = chart.series.push(new am4charts.LineSeries());
 series.dataFields.dateX = "year";
@@ -557,6 +561,22 @@ series3.defaultState.transitionDuration = 1000;
 series3.stacked = false;
 series3.strokeWidth = 2;
 
+var series4 = chart.series.push(new am4charts.LineSeries());
+series4.name = "4. Cookies";
+series4.dataFields.dateX = "year";
+series4.dataFields.valueY = "Number_of_Cookies";
+series4.tooltipText = "[#000]{valueY.value}[/]";
+series4.tooltip.background.fill = am4core.color("#FFF");
+series4.tooltip.getFillFromObject = false;
+series4.tooltip.getStrokeFromObject = true;
+series4.tooltip.background.strokeWidth = 3;
+series4.sequencedInterpolation = true;
+series4.fillOpacity = 0.1;
+series4.defaultState.transitionDuration = 1000;
+series4.stacked = false;
+series4.strokeWidth = 2;
+
+
 chart.cursor = new am4charts.XYCursor();
 chart.cursor.xAxis = dateAxis;
 chart.scrollbarX = new am4core.Scrollbar();
@@ -566,12 +586,13 @@ chart.legend = new am4charts.Legend();
 chart.legend.position = "top";
 
 
+
 // axis ranges
 var range = dateAxis.axisRanges.create();
 range.date = new Date(2016, 3, 1);
-range.endDate = new Date(2016, 5, 1);
+range.endDate = new Date(2016, 4, 1);
 range.axisFill.fill = chart.colors.getIndex(4);
-range.axisFill.fillOpacity = 0.5;
+range.axisFill.fillOpacity = 0.8;
 
 range.label.text = "Announcement of GDPR";
 range.label.inside = true;
@@ -583,7 +604,7 @@ range.label.verticalCenter = "bottom";
 // axis ranges
 var range2 = dateAxis.axisRanges.create();
 range2.date = new Date(2018, 4, 1);
-range2.endDate = new Date(2018, 6, 1);
+range2.endDate = new Date(2018, 5, 1);
 range2.axisFill.fill = chart.colors.getIndex(4);
 range2.axisFill.fillOpacity = 0.8;
 
@@ -592,6 +613,7 @@ range2.label.inside = true;
 range2.label.rotation = 90;
 range2.label.horizontalCenter = "right";
 range2.label.verticalCenter = "bottom";
+
 
 
 </script>
@@ -605,6 +627,8 @@ range2.label.verticalCenter = "bottom";
 
           <div class="row section-header has-bottom-sep" data-aos="fade-up">
 <h1 style = "color: #006D77; align-content: center;">2019: Adoption of privacy rights by industry, leaders and laggers</h1>
+<p style = "color: #006D77;">Click an item in the legend to turn it on/off for further analysis.</p>
+
 
 <div id="chartdiv-2"></div>
 
@@ -633,21 +657,20 @@ label.text = "Drag slider to change radius";
 label.exportable = false;
 
 chart2.data = [
-{ category: "adult", Number_of_View: 35.07, Number_of_Edit: 39.19, Number_of_Delete: 45.65},
-{ category: "blogs", Number_of_View: 20.90, Number_of_Edit: 13.63, Number_of_Delete: 40},
-{ category: "business", Number_of_View: 41.65, Number_of_Edit: 36.77, Number_of_Delete: 47.20},
-{ category: "economy & finance", Number_of_View: 45.69, Number_of_Edit: 37.63, Number_of_Delete: 37.63},
-{ category: "education", Number_of_View: 35.12, Number_of_Edit: 29.46, Number_of_Delete: 35.78},
-{ category: "entertainment", Number_of_View: 33.77, Number_of_Edit: 31.10, Number_of_Delete: 38.91},
-{ category: "food & recipes", Number_of_View: 38.46, Number_of_Edit: 22.30, Number_of_Delete: 53.07},
-{ category: "gambling", Number_of_View: 45.38, Number_of_Edit: 41.53, Number_of_Delete: 50.76},
-{ category: "games", Number_of_View: 35.25, Number_of_Edit: 31.92, Number_of_Delete: 42.79},
-{ category: "information tech", Number_of_View: 29.94, Number_of_Edit: 26.27, Number_of_Delete: 32.67},
-{ category: "news & media", Number_of_View: 37.5, Number_of_Edit: 32.95, Number_of_Delete: 41.47},
-{ category: "personals", Number_of_View: 43.93, Number_of_Edit: 52.27, Number_of_Delete: 59.09},
-{ category: "shopping", Number_of_View: 41.75, Number_of_Edit: 39.50, Number_of_Delete: 43.15},
-{ category: "sports", Number_of_View: 39.52, Number_of_Edit: 40.54, Number_of_Delete: 40.54},
-{ category: "travel", Number_of_View: 48.13, Number_of_Edit: 44.39, Number_of_Delete: 46.26}
+{ category: "personals", Number_of_View: 43.94, Number_of_Edit: 52.27, Number_of_Delete: 59.09, Number_of_Cookies: 73.33}, 
+{ category: "gambling", Number_of_View: 45.38, Number_of_Edit: 41.54, Number_of_Delete: 50.77, Number_of_Cookies: 50}, 
+{ category: "newsandmedia", Number_of_View: 37.5, Number_of_Edit: 32.95, Number_of_Delete: 41.48, Number_of_Cookies: 84.21}, 
+{ category: "economyandfinance", Number_of_View: 45.7, Number_of_Edit: 37.63, Number_of_Delete: 37.63, Number_of_Cookies: 68.57}, 
+{ category: "travel", Number_of_View: 48.13, Number_of_Edit: 44.39, Number_of_Delete: 46.26, Number_of_Cookies: 64.29}, 
+{ category: "sports", Number_of_View: 39.53, Number_of_Edit: 40.54, Number_of_Delete: 40.54, Number_of_Cookies: 71.21}, 
+{ category: "foodandrecipes", Number_of_View: 38.46, Number_of_Edit: 22.31, Number_of_Delete: 53.08, Number_of_Cookies: 71.43}, 
+{ category: "games", Number_of_View: 35.25, Number_of_Edit: 31.93, Number_of_Delete: 42.79, Number_of_Cookies: 79.27}, 
+{ category: "informationtech", Number_of_View: 29.94, Number_of_Edit: 26.27, Number_of_Delete: 32.67, Number_of_Cookies: 64.94}, 
+{ category: "adult", Number_of_View: 35.08, Number_of_Edit: 39.2, Number_of_Delete: 45.65, Number_of_Cookies: 55.63}, 
+{ category: "entertainment", Number_of_View: 33.78, Number_of_Edit: 31.11, Number_of_Delete: 38.91, Number_of_Cookies: 69.83}, 
+{ category: "shopping", Number_of_View: 41.75, Number_of_Edit: 39.5, Number_of_Delete: 43.16, Number_of_Cookies: 71.43}, 
+{ category: "education", Number_of_View: 35.12, Number_of_Edit: 29.47, Number_of_Delete: 35.79, Number_of_Cookies: 65.32}, 
+{ category: "business", Number_of_View: 41.66, Number_of_Edit: 36.77, Number_of_Delete: 47.2, Number_of_Cookies: 66.18}, 
 
 
 ];
@@ -671,6 +694,7 @@ valueAxis.renderer.axisFills.template.disabled = true;
 valueAxis.renderer.axisAngle = 260;
 valueAxis.renderer.labels.template.horizontalCenter = "right";
 valueAxis.min = 0;
+
 
 
 var series1 = chart2.series.push(new am4charts.RadarColumnSeries());
@@ -697,11 +721,18 @@ series3.dataFields.categoryX = "category";
 series3.dataFields.valueY = "Number_of_Delete";
 series3.stacked = true;
 
+var series4 = chart2.series.push(new am4charts.RadarColumnSeries());
+series4.columns.template.radarColumn.strokeOpacity = 1;
+series4.columns.template.tooltipText = "{name}: {valueY.value}";
+series4.name = "4. Cookies";
+series4.dataFields.categoryX = "category";
+series4.dataFields.valueY = "Number_of_Cookies";
+series4.stacked = true;
+
 // Add a legend
 chart2.legend = new am4charts.Legend();
 chart2.legend.position = "bottom";
 chart2.marginBottom=30;
-
 
 
 
@@ -718,6 +749,8 @@ slider.events.on("rangechanged", function() {
 
   valueAxis.renderer.axisAngle = chart2.startAngle;
 });
+
+
 
 </script>
 

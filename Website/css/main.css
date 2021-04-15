@@ -1835,6 +1835,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 .home-content__buttons {
     padding-top: 2rem;
     text-align: left;
+
 }
 
 .home-content__buttons .btn {
